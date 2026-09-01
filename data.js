@@ -21,8 +21,8 @@ window.vstepData = {
             {
                 id: 'sp1_2', title: 'Topic 2: Study/Work',
                 questions: [
-                    { q: 'What is your major?', a: '<t>At the moment, I am majoring in</t> <k>Business Administration</k><t>. The reason why I chose this field is that</t> <k>I have always been passionate about entrepreneurship</k><t>. For example,</t> <k>I love analyzing market trends</k><t>.</t>' },
-                    { q: 'What do you plan to do after graduation?', a: '<t>Well, my ultimate goal is to</t> <k>work as a marketing executive</k><t>. This is because</t> <k>it will provide a dynamic working environment</k><t>. Specifically,</t> <k>I plan to apply for multinational companies</k><t>.</t>' }
+                    { q: 'What is your major?', q_vi: 'Chuyên ngành của bạn là gì?', a: '<t>At the moment, I am majoring in</t> <k>Business Administration</k><t>. The reason why I chose this field is that</t> <k>I have always been passionate about entrepreneurship</k><t>. For example,</t> <k>I love analyzing market trends</k><t>.</t>', a_vi: '<t>Hiện tại, tôi đang học chuyên ngành</t> <k>Quản trị Kinh doanh</k><t>. Lý do tôi chọn lĩnh vực này là vì</t> <k>tôi luôn đam mê khởi nghiệp</k><t>. Ví dụ,</t> <k>tôi rất thích phân tích xu hướng thị trường</k><t>.</t>' },
+                    { q: 'What do you plan to do after graduation?', q_vi: 'Kế hoạch của bạn sau khi tốt nghiệp là gì?', a: '<t>Well, my ultimate goal is to</t> <k>work as a marketing executive</k><t>. This is because</t> <k>it will provide a dynamic working environment</k><t>. Specifically,</t> <k>I plan to apply for multinational companies</k><t>.</t>', a_vi: '<t>Mục tiêu lớn nhất của tôi là</t> <k>làm chuyên viên marketing</k><t>. Điều này là do</t> <k>nó sẽ mang lại một môi trường làm việc năng động</k><t>. Cụ thể,</t> <k>tôi dự định sẽ ứng tuyển vào các công ty đa quốc gia</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'entrepreneurship', ipa: '/ˌɑːntrəprəˈnɜːrʃɪp/', mean: 'tinh thần khởi nghiệp' },
@@ -34,8 +34,8 @@ window.vstepData = {
             {
                 id: 'sp1_3', title: 'Topic 3: Family/Friends',
                 questions: [
-                    { q: 'Do you live with your family?', a: '<t>Actually, no. Currently, I am living</t> <k>on my own</k><t>. The main reason is that</t> <k>my hometown is far from my workplace</k><t>. For example,</t> <k>my parents live 300 kilometers away</k><t>.</t>' },
-                    { q: 'Who are you closest to in your family?', a: '<t>Without a doubt, I feel closest to</t> <k>my mother</k><t>. This is because</t> <k>she is an empathetic listener</k><t>. For instance,</t> <k>whenever I face difficulties, she is the first person I confide in</k><t>.</t>' }
+                    { q: 'Do you live with your family?', q_vi: 'Bạn có sống cùng gia đình không?', a: '<t>Actually, no. Currently, I am living</t> <k>on my own</k><t>. The main reason is that</t> <k>my hometown is far from my workplace</k><t>. For example,</t> <k>my parents live 300 kilometers away</k><t>.</t>', a_vi: '<t>Thực ra là không. Hiện tại, tôi đang sống</t> <k>tự lập</k><t>. Lý do chính là vì</t> <k>quê tôi ở xa nơi làm việc</k><t>. Ví dụ,</t> <k>bố mẹ tôi sống cách đây 300 km</k><t>.</t>' },
+                    { q: 'Who are you closest to in your family?', q_vi: 'Bạn thân nhất với ai trong gia đình?', a: '<t>Without a doubt, I feel closest to</t> <k>my mother</k><t>. This is because</t> <k>she is an empathetic listener</k><t>. For instance,</t> <k>whenever I face difficulties, she is the first person I confide in</k><t>.</t>', a_vi: '<t>Chắc chắn rồi, tôi cảm thấy thân thiết nhất với</t> <k>mẹ tôi</k><t>. Điều này là bởi vì</t> <k>bà ấy là một người biết lắng nghe và đồng cảm</k><t>. Ví dụ,</t> <k>mỗi khi gặp khó khăn, bà luôn là người đầu tiên tôi tâm sự</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'empathetic', ipa: '/ˌempəˈθetɪk/', mean: 'có sự đồng cảm' },
@@ -47,7 +47,7 @@ window.vstepData = {
             {
                 id: 'sp1_4', title: 'Topic 4: Free Time',
                 questions: [
-                    { q: 'What do you usually do in your free time?', a: '<t>Whenever I have spare time, I usually</t> <k>immerse myself in reading</k><t>. The main reason is that</t> <k>it helps me escape from the hustle and bustle</k><t>. For example,</t> <k>I can spend hours reading without getting bored</k><t>.</t>' },
+                    { q: 'What do you usually do in your free time?', q_vi: 'Bạn thường làm gì vào thời gian rảnh?', a: '<t>Whenever I have spare time, I usually</t> <k>immerse myself in reading</k><t>. The main reason is that</t> <k>it helps me escape from the hustle and bustle</k><t>. For example,</t> <k>I can spend hours reading without getting bored</k><t>.</t>', a_vi: '<t>Bất cứ khi nào có thời gian rảnh, tôi thường</t> <k>đắm chìm vào việc đọc sách</k><t>. Lý do chính là vì</t> <k>nó giúp tôi thoát khỏi sự xô bồ náo nhiệt</k><t>. Ví dụ,</t> <k>tôi có thể dành hàng giờ đọc sách mà không thấy chán</k><t>.</t>' },
                     { q: 'Did you have the same hobbies when you were a child?', a: '<t>Actually, my preferences have changed a lot. When I was younger, I used to</t> <k>play outdoor games</k><t>. This is because</t> <k>I was much more energetic</k><t>. However,</t> <k>now I prefer quieter indoor activities</k><t>.</t>' }
                 ],
                 vocab: [
@@ -113,7 +113,7 @@ window.vstepData = {
                 id: 'sp1_9', title: 'Topic 9: Food & Cooking',
                 questions: [
                     { q: 'Do you know how to cook?', a: '<t>Yes, I am quite adept at</t> <k>preparing traditional dishes</k><t>. The main reason I learned to cook is that</t> <k>it is much healthier</k><t>. For example,</t> <k>I often make braised pork for dinner</k><t>.</t>' },
-                    { q: 'What is your favorite food?', a: '<t>Without hesitation, my all-time favorite is</t> <k>Pho, the iconic beef noodle soup</k><t>. This is because</t> <k>the broth is incredibly flavorful</k><t>. For instance,</t> <k>I can eat Pho every day without getting sick of it</k><t>.</t>' }
+                    { q: 'What is your favorite food?', q_vi: 'Món ăn yêu thích của bạn là gì?', a: '<t>Without hesitation, my all-time favorite is</t> <k>Pho, the iconic beef noodle soup</k><t>. This is because</t> <k>the broth is incredibly flavorful</k><t>. For instance,</t> <k>I can eat Pho every day without getting sick of it</k><t>.</t>', a_vi: '<t>Chắc chắn rồi, món tôi thích nhất là</t> <k>Phở</k><t>. Lý do chính là vì</t> <k>nước dùng của nó vô cùng đậm đà</k><t>. Ví dụ,</t> <k>tôi thường ăn một bát phở bò vào mỗi buổi sáng Chủ nhật</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'adept at', ipa: '/əˈdept æt/', mean: 'thành thạo về' },
