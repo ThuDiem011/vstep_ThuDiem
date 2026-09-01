@@ -74,6 +74,7 @@
                     <button onclick="switchMainTab('speaking')" id="tab-speaking" class="main-tab-btn active px-5 py-2.5 rounded-lg bg-white text-primary shadow font-semibold transition-all hover:scale-105"><i class="fa-solid fa-microphone mr-2"></i>Speaking</button>
                     <button onclick="switchMainTab('writing')" id="tab-writing" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-pen-nib mr-2"></i>Writing</button>
                     <button onclick="switchMainTab('reading')" id="tab-reading" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-book-open mr-2"></i>Reading</button>
+                    <button onclick="switchMainTab('guide')" id="tab-guide" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-clipboard-list mr-2"></i>📋 Cấu Trúc Đề & Mẹo Thi</button>
                 </div>
             </div>
         </div>
@@ -256,6 +257,176 @@
             
             <div id="rd-vocab-container" class="glass-panel rounded-2xl p-8 mt-6">
                 <div id="rd-vocab"></div>
+            </div>
+        </section>
+
+        <!-- GUIDE TAB -->
+        <section id="content-guide" class="main-tab-content">
+            <!-- Score Overview Banner -->
+            <div class="glass-panel rounded-2xl p-6 mb-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xl"><i class="fa-solid fa-chart-bar"></i></div>
+                    <h2 class="text-2xl font-display font-bold text-slate-800">Tổng Quan Khung Năng Lực VSTEP & Thang Điểm</h2>
+                </div>
+                <p class="text-slate-500 text-sm mb-4">Thang điểm tổng <strong>10.0</strong> (trung bình cộng 4 kỹ năng, làm tròn 0.5):</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="rounded-xl p-4 text-center bg-red-50 border border-red-200">
+                        <p class="text-2xl font-display font-black text-red-500">&lt; 4.0</p>
+                        <p class="text-sm font-semibold text-red-700 mt-1">Không đạt B1</p>
+                    </div>
+                    <div class="rounded-xl p-4 text-center bg-yellow-50 border border-yellow-200">
+                        <p class="text-2xl font-display font-black text-yellow-600">4.0 – 5.5</p>
+                        <p class="text-sm font-semibold text-yellow-700 mt-1">Đạt B1</p>
+                    </div>
+                    <div class="rounded-xl p-4 text-center bg-emerald-50 border-2 border-emerald-400 shadow-md">
+                        <p class="text-2xl font-display font-black text-emerald-600">6.0 – 8.0</p>
+                        <p class="text-sm font-bold text-emerald-700 mt-1">🎯 Đạt B2 (Mục tiêu)</p>
+                    </div>
+                    <div class="rounded-xl p-4 text-center bg-purple-50 border border-purple-200">
+                        <p class="text-2xl font-display font-black text-purple-600">8.5 – 10.0</p>
+                        <p class="text-sm font-semibold text-purple-700 mt-1">Đạt C1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Skill Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- LISTENING -->
+                <div class="glass-panel rounded-2xl p-6 border-l-4 border-blue-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl"><i class="fa-solid fa-headphones"></i></div>
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-blue-800">Listening – Nghe Hiểu</h3>
+                            <span class="text-xs font-bold bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full">40 phút · 35 câu</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-list-ul mr-1"></i>Cấu Trúc 3 Phần</h4>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 bg-blue-50 rounded-lg p-3">
+                            <span class="font-bold text-blue-700 w-16 shrink-0">Part 1</span>
+                            <span class="text-sm text-slate-600">8 câu – Hướng dẫn, thông báo ngắn. <strong class="text-emerald-600">(Dễ lấy điểm tuyệt đối!)</strong></span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-blue-50 rounded-lg p-3">
+                            <span class="font-bold text-blue-700 w-16 shrink-0">Part 2</span>
+                            <span class="text-sm text-slate-600">12 câu – 3 bài đối thoại đời sống sinh viên, công việc.</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-blue-50 rounded-lg p-3">
+                            <span class="font-bold text-blue-700 w-16 shrink-0">Part 3</span>
+                            <span class="text-sm text-slate-600">15 câu – 3 bài giảng học thuật dài.</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-lightbulb mr-1 text-yellow-500"></i>Mẹo Phòng Thi</h4>
+                    <ul class="space-y-1.5">
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-blue-400 mt-0.5 shrink-0"></i>Tận dụng giờ đọc đề để gạch chân <strong>Keywords</strong> trong câu hỏi & đáp án.</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-blue-400 mt-0.5 shrink-0"></i>Cảnh giác bẫy đổi ý: <em>However, Actually, But, Instead of...</em></li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-blue-400 mt-0.5 shrink-0"></i>Tuyệt đối <strong>không để trống</strong> đáp án khi hết giờ.</li>
+                    </ul>
+                </div>
+
+                <!-- READING -->
+                <div class="glass-panel rounded-2xl p-6 border-l-4 border-emerald-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl"><i class="fa-solid fa-book-open"></i></div>
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-emerald-800">Reading – Đọc Hiểu</h3>
+                            <span class="text-xs font-bold bg-emerald-100 text-emerald-600 px-2 py-0.5 rounded-full">60 phút · 40 câu</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-list-ul mr-1"></i>4 Passage (Độ khó tăng dần)</h4>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 bg-emerald-50 rounded-lg p-3">
+                            <span class="font-bold text-emerald-700 shrink-0">P.1 & 2</span>
+                            <span class="text-sm text-slate-600">20 câu – Đời sống, giáo dục, thói quen, công nghệ cơ bản (B1).</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-emerald-50 rounded-lg p-3">
+                            <span class="font-bold text-emerald-700 shrink-0">P.3 & 4</span>
+                            <span class="text-sm text-slate-600">20 câu – Khoa học, môi trường, nghiên cứu chuyên sâu (B2–C1).</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-clock mr-1 text-yellow-500"></i>Phân Bổ 60 Phút</h4>
+                    <div class="grid grid-cols-5 gap-1 text-center text-xs mb-4">
+                        <div class="bg-emerald-100 rounded-lg p-2 font-bold text-emerald-700">P1<br/>12'</div>
+                        <div class="bg-emerald-100 rounded-lg p-2 font-bold text-emerald-700">P2<br/>13'</div>
+                        <div class="bg-emerald-200 rounded-lg p-2 font-bold text-emerald-800">P3<br/>17'</div>
+                        <div class="bg-emerald-100 rounded-lg p-2 font-bold text-emerald-700">P4<br/>15'</div>
+                        <div class="bg-slate-100 rounded-lg p-2 font-bold text-slate-600">Soát<br/>3'</div>
+                    </div>
+                    <ul class="space-y-1.5">
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-emerald-400 mt-0.5 shrink-0"></i>Làm <strong>Vocabulary & Reference</strong> trước – tốn ít thời gian.</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-emerald-400 mt-0.5 shrink-0"></i>Làm <strong>Main Idea</strong> sau cùng mỗi Passage.</li>
+                    </ul>
+                </div>
+
+                <!-- WRITING -->
+                <div class="glass-panel rounded-2xl p-6 border-l-4 border-orange-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 text-xl"><i class="fa-solid fa-pen-nib"></i></div>
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-orange-800">Writing – Viết</h3>
+                            <span class="text-xs font-bold bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full">60 phút · 2 Task</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-scale-balanced mr-1"></i>Cấu Trúc & Trọng Số Điểm</h4>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 bg-orange-50 rounded-lg p-3">
+                            <span class="font-bold text-orange-700 shrink-0 w-16">Task 1</span>
+                            <span class="text-sm text-slate-600">Viết Thư/Email (≥ 120 từ) – chiếm <strong>1/3</strong> số điểm.</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-orange-50 rounded-lg p-3">
+                            <span class="font-bold text-orange-700 shrink-0 w-16">Task 2</span>
+                            <span class="text-sm text-slate-600">Viết Luận học thuật (≥ 250 từ) – chiếm <strong>2/3</strong> số điểm.</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-clock mr-1 text-yellow-500"></i>Phân Bổ 60 Phút</h4>
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-sm">
+                        <div class="bg-orange-50 rounded-lg p-3">
+                            <p class="font-bold text-orange-700 mb-1">Task 1 – 20 phút</p>
+                            <p class="text-slate-600 text-xs">3' dàn ý → 14' viết → 3' soát lỗi</p>
+                        </div>
+                        <div class="bg-orange-50 rounded-lg p-3">
+                            <p class="font-bold text-orange-700 mb-1">Task 2 – 40 phút</p>
+                            <p class="text-slate-600 text-xs">5' phân tích → 30' viết → 5' soát lỗi</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-1.5">
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-orange-400 mt-0.5 shrink-0"></i>Bám sát câu nối học thuật: <em>First and foremost, On the other hand, Consequently...</em></li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-orange-400 mt-0.5 shrink-0"></i><strong>Viết đủ số từ</strong> – tránh bị trừ điểm Task Fulfillment.</li>
+                    </ul>
+                </div>
+
+                <!-- SPEAKING -->
+                <div class="glass-panel rounded-2xl p-6 border-l-4 border-purple-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 text-xl"><i class="fa-solid fa-microphone"></i></div>
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-purple-800">Speaking – Nói</h3>
+                            <span class="text-xs font-bold bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full">12 phút · 3 phần</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-list-ul mr-1"></i>Cấu Trúc 3 Phần</h4>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-start gap-2 bg-purple-50 rounded-lg p-3">
+                            <span class="font-bold text-purple-700 w-16 shrink-0">Part 1</span>
+                            <span class="text-sm text-slate-600">3 phút – 2 chủ đề xã hội, 4–6 câu hỏi ngắn.</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-purple-50 rounded-lg p-3">
+                            <span class="font-bold text-purple-700 w-16 shrink-0">Part 2</span>
+                            <span class="text-sm text-slate-600">4 phút (1' chuẩn bị + 3' nói) – Thảo luận giải pháp, chọn 1 trong 3.</span>
+                        </div>
+                        <div class="flex items-start gap-2 bg-purple-50 rounded-lg p-3">
+                            <span class="font-bold text-purple-700 w-16 shrink-0">Part 3</span>
+                            <span class="text-sm text-slate-600">5 phút (1' chuẩn bị + 4' nói) – Phát triển chủ đề qua Mindmap.</span>
+                        </div>
+                    </div>
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2"><i class="fa-solid fa-lightbulb mr-1 text-yellow-500"></i>Chiến Thuật Phòng Thi</h4>
+                    <ul class="space-y-1.5">
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-purple-400 mt-0.5 shrink-0"></i>Giữ tốc độ nói đều, dùng cụm đệm: <em>Well, To be honest, From my perspective...</em></li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-purple-400 mt-0.5 shrink-0"></i>Part 1: Trả lời theo công thức <strong>A.R.E</strong> (Answer – Reason – Example).</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-600"><i class="fa-solid fa-check-circle text-purple-400 mt-0.5 shrink-0"></i>Part 2 & 3: Dùng triệt để <strong>khung template 5 đoạn</strong> đã luyện sẵn.</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
