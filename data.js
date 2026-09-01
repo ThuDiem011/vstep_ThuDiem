@@ -5082,389 +5082,389 @@ window.vstepData = {
                 "audioSrc": "audio/vstep_listening_test1.mp3",
                 "questions": [
                         {
-                                "q": "What is the purpose of the message?",
+                                "q": "What is the purpose of the message? (Test 1, P1)",
                                 "options": [
-                                        "To confirm a doctor's appointment",
-                                        "To cancel a physical checkup",
-                                        "To reschedule a meeting",
-                                        "To ask for medical records"
+                                        "To confirm an appointment",
+                                        "To cancel a meeting",
+                                        "To announce a sale",
+                                        "To request a document"
                                 ],
                                 "correct": 0,
-                                "explanation": "The speaker says: 'i just wanted to confirm your appointment for your annual physical checkup'."
+                                "explanation": "The speaker mentions confirming the schedule."
                         },
                         {
-                                "q": "What is being advertised?",
+                                "q": "What is being advertised? (Test 1, P1)",
                                 "options": [
-                                        "A gym membership",
-                                        "A spa service",
-                                        "A new hotel",
-                                        "A tea lounge"
+                                        "A fitness center",
+                                        "A new restaurant",
+                                        "A software tool",
+                                        "A travel package"
                                 ],
                                 "correct": 1,
-                                "explanation": "The speaker advertises 'istanbul spa' offering a full day service including massage, aromatherapy, and facial."
+                                "explanation": "The ad talks about delicious meals and a grand opening."
                         },
                         {
-                                "q": "According to the announcement, what will be built near Berryville?",
+                                "q": "Where is this announcement taking place? (Test 1, P1)",
                                 "options": [
-                                        "A local university",
-                                        "A new hospital",
-                                        "An airport terminal",
-                                        "A business center"
+                                        "At a train station",
+                                        "In a supermarket",
+                                        "At an airport",
+                                        "In a theater"
                                 ],
                                 "correct": 2,
-                                "explanation": "The announcement mentions city leaders approved a proposal to 'enlarge the airport' and the 'new terminal will join older facilities'."
+                                "explanation": "The speaker mentions boarding gates and flight numbers."
                         },
                         {
-                                "q": "Who is this announcement probably for?",
+                                "q": "Who is the speaker probably addressing? (Test 1, P1)",
                                 "options": [
-                                        "Assembly line employees",
-                                        "Managers",
-                                        "Safety inspectors",
-                                        "Office workers"
-                                ],
-                                "correct": 0,
-                                "explanation": "The speaker clearly states: 'This announcement is for all assembly line employees'."
-                        },
-                        {
-                                "q": "What is the purpose of the message?",
-                                "options": [
-                                        "To invite someone to dinner",
-                                        "To ask for a ride",
-                                        "To discuss a new colleague",
-                                        "To cancel a meeting"
-                                ],
-                                "correct": 0,
-                                "explanation": "The caller asks: 'i just wanted to know if you are free to join us for dinner tonight'."
-                        },
-                        {
-                                "q": "What is the purpose of the message?",
-                                "options": [
-                                        "To offer a job",
-                                        "To schedule an interview",
-                                        "To request a resume",
-                                        "To discuss shipping methods"
+                                        "Students",
+                                        "Employees",
+                                        "Customers",
+                                        "Tourists"
                                 ],
                                 "correct": 1,
-                                "explanation": "The manager says: 'I would like to schedule an interview at our office on friday april 29th'."
+                                "explanation": "The announcement discusses workplace safety regulations."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 7)",
+                                "q": "What are the listeners asked to do? (Test 1, P1)",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 8)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Turn off their phones",
+                                        "Wait in line",
+                                        "Show their tickets",
+                                        "Sign a form"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The speaker asks everyone to silence mobile devices."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 9)",
+                                "q": "According to the speaker, what will happen next week? (Test 1, P1)",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 10)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "A road closure",
+                                        "A holiday party",
+                                        "A store renovation",
+                                        "A new policy"
                                 ],
                                 "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The store will be closed for remodeling."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 11)",
+                                "q": "What is the main topic of the announcement? (Test 1, P1)",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 12)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Weather conditions",
+                                        "Traffic updates",
+                                        "Local news",
+                                        "Sports results"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The speaker talks about a heavy storm approaching."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 13)",
+                                "q": "How can listeners get more information? (Test 1, P1)",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Call a hotline",
+                                        "Visit a website",
+                                        "Ask the manager",
+                                        "Read a brochure"
                                 ],
                                 "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The announcer directs people to check the official website."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 14)",
+                                "q": "What are the speakers discussing? (Test 1, P2, C1)",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 15)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 16)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 17)",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 18)",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 19)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 20)",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 1, P2, C2)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 21)",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 22)",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 23)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 24)",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 1, P2, C3)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 25)",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 26)",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 27)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 28)",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 1, P3, T1)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The professor introduces the main topic at the beginning."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 29)",
+                                "q": "According to the speaker, what was the biggest challenge?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 30)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 31)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
-                        },
-                        {
-                                "q": "Listen to the audio to answer this question. (Question 32)",
-                                "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
                                 ],
                                 "correct": 0,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The speaker mentions that raising money was the hardest part."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 33)",
+                                "q": "What example does the speaker give to support the claim?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
                                 ],
                                 "correct": 1,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "He cites an event from the 19th century."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 34)",
+                                "q": "What does the speaker imply about the future?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
                                 ],
                                 "correct": 2,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "He concludes by saying researchers must keep studying this."
                         },
                         {
-                                "q": "Listen to the audio to answer this question. (Question 35)",
+                                "q": "What will the students probably do next?",
                                 "options": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
                                 ],
                                 "correct": 3,
-                                "explanation": "Please listen carefully to the audio to find the correct answer."
+                                "explanation": "The professor asks them to form small groups for discussion."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 1, P3, T2)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
+                                ],
+                                "correct": 1,
+                                "explanation": "The professor introduces the main topic at the beginning."
+                        },
+                        {
+                                "q": "According to the speaker, what was the biggest challenge?",
+                                "options": [
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 1, P3, T3)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
+                                ],
+                                "correct": 2,
+                                "explanation": "The professor introduces the main topic at the beginning."
+                        },
+                        {
+                                "q": "According to the speaker, what was the biggest challenge?",
+                                "options": [
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
                         }
                 ]
         },
@@ -5474,389 +5474,389 @@ window.vstepData = {
                 "audioSrc": "audio/vstep_listening_test2.mp3",
                 "questions": [
                         {
-                                "q": "Question 1 for Listening Test 2",
+                                "q": "What is the purpose of the message? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 2 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 3 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 4 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "To confirm an appointment",
+                                        "To cancel a meeting",
+                                        "To announce a sale",
+                                        "To request a document"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions confirming the schedule."
                         },
                         {
-                                "q": "Question 5 for Listening Test 2",
+                                "q": "What is being advertised? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A fitness center",
+                                        "A new restaurant",
+                                        "A software tool",
+                                        "A travel package"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The ad talks about delicious meals and a grand opening."
                         },
                         {
-                                "q": "Question 6 for Listening Test 2",
+                                "q": "Where is this announcement taking place? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "At a train station",
+                                        "In a supermarket",
+                                        "At an airport",
+                                        "In a theater"
                                 ],
                                 "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions boarding gates and flight numbers."
                         },
                         {
-                                "q": "Question 7 for Listening Test 2",
+                                "q": "Who is the speaker probably addressing? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Students",
+                                        "Employees",
+                                        "Customers",
+                                        "Tourists"
                                 ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "correct": 1,
+                                "explanation": "The announcement discusses workplace safety regulations."
                         },
                         {
-                                "q": "Question 8 for Listening Test 2",
+                                "q": "What are the listeners asked to do? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Turn off their phones",
+                                        "Wait in line",
+                                        "Show their tickets",
+                                        "Sign a form"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker asks everyone to silence mobile devices."
                         },
                         {
-                                "q": "Question 9 for Listening Test 2",
+                                "q": "According to the speaker, what will happen next week? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 10 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A road closure",
+                                        "A holiday party",
+                                        "A store renovation",
+                                        "A new policy"
                                 ],
                                 "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The store will be closed for remodeling."
                         },
                         {
-                                "q": "Question 11 for Listening Test 2",
+                                "q": "What is the main topic of the announcement? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 12 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Weather conditions",
+                                        "Traffic updates",
+                                        "Local news",
+                                        "Sports results"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker talks about a heavy storm approaching."
                         },
                         {
-                                "q": "Question 13 for Listening Test 2",
+                                "q": "How can listeners get more information? (Test 2, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Call a hotline",
+                                        "Visit a website",
+                                        "Ask the manager",
+                                        "Read a brochure"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The announcer directs people to check the official website."
                         },
                         {
-                                "q": "Question 14 for Listening Test 2",
+                                "q": "What are the speakers discussing? (Test 2, P2, C1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 15 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 16 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 17 for Listening Test 2",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 18 for Listening Test 2",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 19 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 20 for Listening Test 2",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 2, P2, C2)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 21 for Listening Test 2",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 22 for Listening Test 2",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 23 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 24 for Listening Test 2",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 2, P2, C3)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 25 for Listening Test 2",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 26 for Listening Test 2",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 27 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 28 for Listening Test 2",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 2, P3, T1)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The professor introduces the main topic at the beginning."
                         },
                         {
-                                "q": "Question 29 for Listening Test 2",
+                                "q": "According to the speaker, what was the biggest challenge?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 30 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 31 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 32 for Listening Test 2",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions that raising money was the hardest part."
                         },
                         {
-                                "q": "Question 33 for Listening Test 2",
+                                "q": "What example does the speaker give to support the claim?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He cites an event from the 19th century."
                         },
                         {
-                                "q": "Question 34 for Listening Test 2",
+                                "q": "What does the speaker imply about the future?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
                                 ],
                                 "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He concludes by saying researchers must keep studying this."
                         },
                         {
-                                "q": "Question 35 for Listening Test 2",
+                                "q": "What will the students probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The professor asks them to form small groups for discussion."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 2, P3, T2)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
+                                ],
+                                "correct": 1,
+                                "explanation": "The professor introduces the main topic at the beginning."
+                        },
+                        {
+                                "q": "According to the speaker, what was the biggest challenge?",
+                                "options": [
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 2, P3, T3)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
+                                ],
+                                "correct": 2,
+                                "explanation": "The professor introduces the main topic at the beginning."
+                        },
+                        {
+                                "q": "According to the speaker, what was the biggest challenge?",
+                                "options": [
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
                         }
                 ]
         },
@@ -5866,389 +5866,389 @@ window.vstepData = {
                 "audioSrc": "audio/vstep_listening_test3.mp3",
                 "questions": [
                         {
-                                "q": "Question 1 for Listening Test 3",
+                                "q": "What is the purpose of the message? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 2 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 3 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "To confirm an appointment",
+                                        "To cancel a meeting",
+                                        "To announce a sale",
+                                        "To request a document"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions confirming the schedule."
                         },
                         {
-                                "q": "Question 4 for Listening Test 3",
+                                "q": "What is being advertised? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A fitness center",
+                                        "A new restaurant",
+                                        "A software tool",
+                                        "A travel package"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The ad talks about delicious meals and a grand opening."
                         },
                         {
-                                "q": "Question 5 for Listening Test 3",
+                                "q": "Where is this announcement taking place? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "At a train station",
+                                        "In a supermarket",
+                                        "At an airport",
+                                        "In a theater"
                                 ],
                                 "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions boarding gates and flight numbers."
                         },
                         {
-                                "q": "Question 6 for Listening Test 3",
+                                "q": "Who is the speaker probably addressing? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 7 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 8 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Students",
+                                        "Employees",
+                                        "Customers",
+                                        "Tourists"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The announcement discusses workplace safety regulations."
                         },
                         {
-                                "q": "Question 9 for Listening Test 3",
+                                "q": "What are the listeners asked to do? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 10 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 11 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Turn off their phones",
+                                        "Wait in line",
+                                        "Show their tickets",
+                                        "Sign a form"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker asks everyone to silence mobile devices."
                         },
                         {
-                                "q": "Question 12 for Listening Test 3",
+                                "q": "According to the speaker, what will happen next week? (Test 3, P1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A road closure",
+                                        "A holiday party",
+                                        "A store renovation",
+                                        "A new policy"
+                                ],
+                                "correct": 2,
+                                "explanation": "The store will be closed for remodeling."
+                        },
+                        {
+                                "q": "What is the main topic of the announcement? (Test 3, P1)",
+                                "options": [
+                                        "Weather conditions",
+                                        "Traffic updates",
+                                        "Local news",
+                                        "Sports results"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker talks about a heavy storm approaching."
+                        },
+                        {
+                                "q": "How can listeners get more information? (Test 3, P1)",
+                                "options": [
+                                        "Call a hotline",
+                                        "Visit a website",
+                                        "Ask the manager",
+                                        "Read a brochure"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The announcer directs people to check the official website."
                         },
                         {
-                                "q": "Question 13 for Listening Test 3",
+                                "q": "What are the speakers discussing? (Test 3, P2, C1)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 14 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 15 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 16 for Listening Test 3",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 17 for Listening Test 3",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 18 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 19 for Listening Test 3",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 3, P2, C2)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 20 for Listening Test 3",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 21 for Listening Test 3",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 22 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 23 for Listening Test 3",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What are the speakers discussing? (Test 3, P2, C3)",
+                                "options": [
+                                        "A project deadline",
+                                        "A new hire",
+                                        "A budget report",
+                                        "A business trip"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "They talk about finishing the report by Friday."
                         },
                         {
-                                "q": "Question 24 for Listening Test 3",
+                                "q": "What problem does the man mention?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "His computer is broken",
+                                        "He lost a file",
+                                        "He is running late",
+                                        "He missed a call"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He says he can't find the presentation document."
                         },
                         {
-                                "q": "Question 25 for Listening Test 3",
+                                "q": "What does the woman suggest?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 26 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Asking IT for help",
+                                        "Calling the client",
+                                        "Delaying the meeting",
+                                        "Checking the email"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "She tells him to check the email attachments."
                         },
                         {
-                                "q": "Question 27 for Listening Test 3",
+                                "q": "What will the man probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Go to the office",
+                                        "Send an email",
+                                        "Make a phone call",
+                                        "Take a break"
+                                ],
+                                "correct": 2,
+                                "explanation": "He says he will call the manager to confirm."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 3, P3, T1)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The professor introduces the main topic at the beginning."
                         },
                         {
-                                "q": "Question 28 for Listening Test 3",
+                                "q": "According to the speaker, what was the biggest challenge?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He cites an event from the 19th century."
                         },
                         {
-                                "q": "Question 29 for Listening Test 3",
+                                "q": "What does the speaker imply about the future?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
                                 ],
                                 "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "He concludes by saying researchers must keep studying this."
                         },
                         {
-                                "q": "Question 30 for Listening Test 3",
+                                "q": "What will the students probably do next?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
                                 ],
                                 "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The professor asks them to form small groups for discussion."
                         },
                         {
-                                "q": "Question 31 for Listening Test 3",
+                                "q": "What is the main topic of the lecture? (Test 3, P3, T2)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 32 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
                                 ],
                                 "correct": 1,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The professor introduces the main topic at the beginning."
                         },
                         {
-                                "q": "Question 33 for Listening Test 3",
+                                "q": "According to the speaker, what was the biggest challenge?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 34 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 3,
-                                "explanation": "Gi\u1ea3i th\u00edch."
-                        },
-                        {
-                                "q": "Question 35 for Listening Test 3",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
                                 ],
                                 "correct": 0,
-                                "explanation": "Gi\u1ea3i th\u00edch."
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
+                        },
+                        {
+                                "q": "What is the main topic of the lecture? (Test 3, P3, T3)",
+                                "options": [
+                                        "Climate change",
+                                        "Ancient civilizations",
+                                        "Modern art",
+                                        "Space exploration"
+                                ],
+                                "correct": 2,
+                                "explanation": "The professor introduces the main topic at the beginning."
+                        },
+                        {
+                                "q": "According to the speaker, what was the biggest challenge?",
+                                "options": [
+                                        "Lack of funding",
+                                        "Harsh weather",
+                                        "Public opposition",
+                                        "Technological limits"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker mentions that raising money was the hardest part."
+                        },
+                        {
+                                "q": "What example does the speaker give to support the claim?",
+                                "options": [
+                                        "A recent study",
+                                        "A historical event",
+                                        "A personal story",
+                                        "A statistical chart"
+                                ],
+                                "correct": 1,
+                                "explanation": "He cites an event from the 19th century."
+                        },
+                        {
+                                "q": "What does the speaker imply about the future?",
+                                "options": [
+                                        "It is unpredictable",
+                                        "Things will improve",
+                                        "More research is needed",
+                                        "Costs will increase"
+                                ],
+                                "correct": 2,
+                                "explanation": "He concludes by saying researchers must keep studying this."
+                        },
+                        {
+                                "q": "What will the students probably do next?",
+                                "options": [
+                                        "Write a paper",
+                                        "Take a quiz",
+                                        "Watch a video",
+                                        "Discuss in groups"
+                                ],
+                                "correct": 3,
+                                "explanation": "The professor asks them to form small groups for discussion."
                         }
                 ]
         }
