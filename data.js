@@ -5082,389 +5082,389 @@ window.vstepData = {
                 "audioSrc": "audio/vstep_listening_test1.mp3",
                 "questions": [
                         {
-                                "q": "Question 1 for Listening Test 1",
+                                "q": "What is the purpose of the message?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "To confirm a doctor's appointment",
+                                        "To cancel a physical checkup",
+                                        "To reschedule a meeting",
+                                        "To ask for medical records"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "The speaker says: 'i just wanted to confirm your appointment for your annual physical checkup'."
                         },
                         {
-                                "q": "Question 2 for Listening Test 1",
+                                "q": "What is being advertised?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A gym membership",
+                                        "A spa service",
+                                        "A new hotel",
+                                        "A tea lounge"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "The speaker advertises 'istanbul spa' offering a full day service including massage, aromatherapy, and facial."
                         },
                         {
-                                "q": "Question 3 for Listening Test 1",
+                                "q": "According to the announcement, what will be built near Berryville?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A local university",
+                                        "A new hospital",
+                                        "An airport terminal",
+                                        "A business center"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "The announcement mentions city leaders approved a proposal to 'enlarge the airport' and the 'new terminal will join older facilities'."
                         },
                         {
-                                "q": "Question 4 for Listening Test 1",
+                                "q": "Who is this announcement probably for?",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "Assembly line employees",
+                                        "Managers",
+                                        "Safety inspectors",
+                                        "Office workers"
+                                ],
+                                "correct": 0,
+                                "explanation": "The speaker clearly states: 'This announcement is for all assembly line employees'."
+                        },
+                        {
+                                "q": "What is the purpose of the message?",
+                                "options": [
+                                        "To invite someone to dinner",
+                                        "To ask for a ride",
+                                        "To discuss a new colleague",
+                                        "To cancel a meeting"
+                                ],
+                                "correct": 0,
+                                "explanation": "The caller asks: 'i just wanted to know if you are free to join us for dinner tonight'."
+                        },
+                        {
+                                "q": "What is the purpose of the message?",
+                                "options": [
+                                        "To offer a job",
+                                        "To schedule an interview",
+                                        "To request a resume",
+                                        "To discuss shipping methods"
+                                ],
+                                "correct": 1,
+                                "explanation": "The manager says: 'I would like to schedule an interview at our office on friday april 29th'."
+                        },
+                        {
+                                "q": "Listen to the audio to answer this question. (Question 7)",
+                                "options": [
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 5 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 8)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 6 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 9)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 7 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 10)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 8 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 11)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 9 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 12)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 10 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 13)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 11 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 14)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 12 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 15)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 13 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 16)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 14 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 17)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 15 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 18)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 16 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 19)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 17 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 20)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 18 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 21)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 19 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 22)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 20 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 23)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 21 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 24)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 22 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 25)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 23 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 26)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 24 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 27)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 25 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 28)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 26 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 29)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 27 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 30)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 28 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 31)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 29 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 32)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 30 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 33)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 31 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 34)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         },
                         {
-                                "q": "Question 32 for Listening Test 1",
+                                "q": "Listen to the audio to answer this question. (Question 35)",
                                 "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
-                        },
-                        {
-                                "q": "Question 33 for Listening Test 1",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
-                        },
-                        {
-                                "q": "Question 34 for Listening Test 1",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
-                        },
-                        {
-                                "q": "Question 35 for Listening Test 1",
-                                "options": [
-                                        "Option A",
-                                        "Option B",
-                                        "Option C",
-                                        "Option D"
-                                ],
-                                "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Please listen carefully to the audio to find the correct answer."
                         }
                 ]
         },
@@ -5482,7 +5482,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 2 for Listening Test 2",
@@ -5493,7 +5493,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 3 for Listening Test 2",
@@ -5504,7 +5504,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 4 for Listening Test 2",
@@ -5515,7 +5515,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 5 for Listening Test 2",
@@ -5526,7 +5526,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 6 for Listening Test 2",
@@ -5537,7 +5537,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 7 for Listening Test 2",
@@ -5548,7 +5548,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 8 for Listening Test 2",
@@ -5559,7 +5559,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 9 for Listening Test 2",
@@ -5570,7 +5570,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 10 for Listening Test 2",
@@ -5581,7 +5581,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 11 for Listening Test 2",
@@ -5592,7 +5592,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 12 for Listening Test 2",
@@ -5603,7 +5603,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 13 for Listening Test 2",
@@ -5614,7 +5614,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 14 for Listening Test 2",
@@ -5625,7 +5625,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 15 for Listening Test 2",
@@ -5636,7 +5636,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 16 for Listening Test 2",
@@ -5647,7 +5647,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 17 for Listening Test 2",
@@ -5658,7 +5658,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 18 for Listening Test 2",
@@ -5669,7 +5669,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 19 for Listening Test 2",
@@ -5680,7 +5680,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 20 for Listening Test 2",
@@ -5691,7 +5691,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 21 for Listening Test 2",
@@ -5702,7 +5702,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 22 for Listening Test 2",
@@ -5713,7 +5713,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 23 for Listening Test 2",
@@ -5724,7 +5724,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 24 for Listening Test 2",
@@ -5735,7 +5735,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 25 for Listening Test 2",
@@ -5746,7 +5746,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 26 for Listening Test 2",
@@ -5757,7 +5757,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 27 for Listening Test 2",
@@ -5768,7 +5768,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 28 for Listening Test 2",
@@ -5779,7 +5779,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 29 for Listening Test 2",
@@ -5790,7 +5790,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 30 for Listening Test 2",
@@ -5801,7 +5801,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 31 for Listening Test 2",
@@ -5812,7 +5812,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 32 for Listening Test 2",
@@ -5823,7 +5823,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 33 for Listening Test 2",
@@ -5834,7 +5834,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 34 for Listening Test 2",
@@ -5845,7 +5845,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 35 for Listening Test 2",
@@ -5856,7 +5856,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         }
                 ]
         },
@@ -5874,7 +5874,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 2 for Listening Test 3",
@@ -5885,7 +5885,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 3 for Listening Test 3",
@@ -5896,7 +5896,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 4 for Listening Test 3",
@@ -5907,7 +5907,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 5 for Listening Test 3",
@@ -5918,7 +5918,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 6 for Listening Test 3",
@@ -5929,7 +5929,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 7 for Listening Test 3",
@@ -5940,7 +5940,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 8 for Listening Test 3",
@@ -5951,7 +5951,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 9 for Listening Test 3",
@@ -5962,7 +5962,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 10 for Listening Test 3",
@@ -5973,7 +5973,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 11 for Listening Test 3",
@@ -5984,7 +5984,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 12 for Listening Test 3",
@@ -5995,7 +5995,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 13 for Listening Test 3",
@@ -6006,7 +6006,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 14 for Listening Test 3",
@@ -6017,7 +6017,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 15 for Listening Test 3",
@@ -6028,7 +6028,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 16 for Listening Test 3",
@@ -6039,7 +6039,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 17 for Listening Test 3",
@@ -6050,7 +6050,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 18 for Listening Test 3",
@@ -6061,7 +6061,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 19 for Listening Test 3",
@@ -6072,7 +6072,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 20 for Listening Test 3",
@@ -6083,7 +6083,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 21 for Listening Test 3",
@@ -6094,7 +6094,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 22 for Listening Test 3",
@@ -6105,7 +6105,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 23 for Listening Test 3",
@@ -6116,7 +6116,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 24 for Listening Test 3",
@@ -6127,7 +6127,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 25 for Listening Test 3",
@@ -6138,7 +6138,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 26 for Listening Test 3",
@@ -6149,7 +6149,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 27 for Listening Test 3",
@@ -6160,7 +6160,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 28 for Listening Test 3",
@@ -6171,7 +6171,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 29 for Listening Test 3",
@@ -6182,7 +6182,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 30 for Listening Test 3",
@@ -6193,7 +6193,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 31 for Listening Test 3",
@@ -6204,7 +6204,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 32 for Listening Test 3",
@@ -6215,7 +6215,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 1,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 33 for Listening Test 3",
@@ -6226,7 +6226,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 2,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 34 for Listening Test 3",
@@ -6237,7 +6237,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 3,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         },
                         {
                                 "q": "Question 35 for Listening Test 3",
@@ -6248,7 +6248,7 @@ window.vstepData = {
                                         "Option D"
                                 ],
                                 "correct": 0,
-                                "explanation": "Giải thích cho câu hỏi này."
+                                "explanation": "Gi\u1ea3i th\u00edch."
                         }
                 ]
         }
