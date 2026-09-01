@@ -236,6 +236,15 @@
                             Your browser does not support the audio element.
                         </audio>
                     </div>
+                    
+                    <!-- TRANSCRIPT PANEL -->
+                    <button onclick="toggleTranscript()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 rounded-xl border border-slate-300 shadow-sm transition-all mb-4 flex justify-between items-center px-6">
+                        <span><i class="fa-solid fa-closed-captioning mr-2"></i>Xem Phụ Đề (Transcript)</span>
+                        <i id="ls-transcript-icon" class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="ls-transcript-panel" class="hidden bg-white border border-slate-200 rounded-xl p-6 shadow-inner max-h-[500px] overflow-y-auto mb-6">
+                        <p id="ls-transcript-text" class="text-slate-700 leading-relaxed text-sm whitespace-pre-wrap"></p>
+                    </div>
                 </div>
                 <!-- Questions -->
                 <div class="w-full md:w-1/2 questions-panel mt-8 md:mt-0 relative">
@@ -1179,6 +1188,12 @@
                 audioSrc.src = data.audioSrc;
                 document.getElementById('ls-audio').load();
             }
+            
+            if (data.transcript) {
+                document.getElementById('ls-transcript-text').innerText = data.transcript;
+            } else {
+                document.getElementById('ls-transcript-text').innerText = "[Chưa có phụ đề cho bài nghe này]";
+            }
 
             let qHtml = '';
             data.questions.forEach((q, i) => {
@@ -1232,6 +1247,20 @@
                 </div>`;
             });
             document.getElementById('ls-questions').innerHTML = qHtml;
+        }
+
+        function toggleTranscript() {
+            const panel = document.getElementById('ls-transcript-panel');
+            const icon = document.getElementById('ls-transcript-icon');
+            if(panel.classList.contains('hidden')) {
+                panel.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                panel.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
         }
 
         function lsSelectAnswer(qIndex, optIndex) {
