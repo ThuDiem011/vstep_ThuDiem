@@ -48,7 +48,7 @@ window.vstepData = {
                 id: 'sp1_4', title: 'Topic 4: Free Time',
                 questions: [
                     { q: 'What do you usually do in your free time?', q_vi: 'Bạn thường làm gì vào thời gian rảnh?', a: '<t>Whenever I have spare time, I usually</t> <k>immerse myself in reading</k><t>. The main reason is that</t> <k>it helps me escape from the hustle and bustle</k><t>. For example,</t> <k>I can spend hours reading without getting bored</k><t>.</t>', a_vi: '<t>Bất cứ khi nào có thời gian rảnh, tôi thường</t> <k>đắm chìm vào việc đọc sách</k><t>. Lý do chính là vì</t> <k>nó giúp tôi thoát khỏi sự xô bồ náo nhiệt</k><t>. Ví dụ,</t> <k>tôi có thể dành hàng giờ đọc sách mà không thấy chán</k><t>.</t>' },
-                    { q: 'Did you have the same hobbies when you were a child?', a: '<t>Actually, my preferences have changed a lot. When I was younger, I used to</t> <k>play outdoor games</k><t>. This is because</t> <k>I was much more energetic</k><t>. However,</t> <k>now I prefer quieter indoor activities</k><t>.</t>' }
+                    { q: 'Did you have the same hobbies when you were a child?', q_vi: 'Lúc nhỏ bạn có sở thích giống vậy không?', a: '<t>Actually, my preferences have changed a lot. When I was younger, I used to</t> <k>play outdoor games</k><t>. This is because</t> <k>I was much more energetic</k><t>. However,</t> <k>now I prefer quieter indoor activities</k><t>.</t>', a_vi: '<t>Thực ra là không. Hồi còn nhỏ, tôi thích</t> <k>chơi điện tử</k><t>. Lý do chính là vì</t> <k>tôi thấy nó rất thú vị và có tính giải trí cao</k><t>. Ví dụ,</t> <k>tôi thường rủ bạn bè đến nhà chơi game vào dịp cuối tuần</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'immerse', ipa: '/ɪˈmɜːrs/', mean: 'đắm chìm' },
@@ -60,8 +60,8 @@ window.vstepData = {
             {
                 id: 'sp1_5', title: 'Topic 5: Sports',
                 questions: [
-                    { q: 'Do you play any sports?', a: '<t>Yes, absolutely. I frequently</t> <k>play badminton</k><t>. The main reason is that</t> <k>it is an excellent cardiovascular workout</k><t>. For example,</t> <k>we usually rent a court every Tuesday</k><t>.</t>' },
-                    { q: 'Why is sport important for people?', a: '<t>From my perspective, playing sports is crucial because</t> <k>it enhances physical and mental health</k><t>. Specifically,</t> <k>sweating helps release endorphins</k><t>. For instance,</t> <k>after a workout, I always feel refreshed</k><t>.</t>' }
+                    { q: 'Do you play any sports?', q_vi: 'Bạn có chơi môn thể thao nào không?', a: '<t>Yes, absolutely. I frequently</t> <k>play badminton</k><t>. The main reason is that</t> <k>it is an excellent cardiovascular workout</k><t>. For example,</t> <k>we usually rent a court every Tuesday</k><t>.</t>', a_vi: '<t>Chắc chắn rồi, tôi là một người hâm mộ</t> <k>bóng đá</k><t>. Lý do chính là vì</t> <k>nó giúp tôi giữ dáng và khỏe mạnh</k><t>. Chẳng hạn,</t> <k>tôi thường chơi bóng đá với đồng nghiệp hai lần một tuần</k><t>.</t>' },
+                    { q: 'Why is sport important for people?', q_vi: 'Tại sao thể thao lại quan trọng với mọi người?', a: '<t>From my perspective, playing sports is crucial because</t> <k>it enhances physical and mental health</k><t>. Specifically,</t> <k>sweating helps release endorphins</k><t>. For instance,</t> <k>after a workout, I always feel refreshed</k><t>.</t>', a_vi: '<t>Theo tôi, thể thao vô cùng quan trọng vì</t> <k>nó cải thiện sức khỏe thể chất lẫn tinh thần</k><t>. Điều này là do</t> <k>khi tập luyện, cơ thể tiết ra endorphin giúp giảm căng thẳng</k><t>. Ví dụ,</t> <k>tôi luôn cảm thấy sảng khoái sau khi tập gym</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'cardiovascular', ipa: '/ˌkɑːrdiəʊˈvæskjələr/', mean: 'thuộc tim mạch' },
@@ -73,8 +73,8 @@ window.vstepData = {
             {
                 id: 'sp1_6', title: 'Topic 6: Daily Routines',
                 questions: [
-                    { q: 'When do you usually get up?', a: '<t>Normally, I am an early bird, so I wake up at</t> <k>around 6 AM</k><t>. The main reason is that</t> <k>I love enjoying the tranquility</k><t>. For example,</t> <k>I use this quiet time to meditate</k><t>.</t>' },
-                    { q: 'What do you do on the weekends?', a: '<t>During the weekends, I tend to</t> <k>catch up on my sleep</k><t>. This is because</t> <k>my weekdays are intensely stressful</k><t>. For instance,</t> <k>we often go to a cozy cafe to recharge our batteries</k><t>.</t>' }
+                    { q: 'When do you usually get up?', q_vi: 'Bạn thường thức dậy lúc mấy giờ?', a: '<t>Normally, I am an early bird, so I wake up at</t> <k>around 6 AM</k><t>. The main reason is that</t> <k>I love enjoying the tranquility</k><t>. For example,</t> <k>I use this quiet time to meditate</k><t>.</t>', a_vi: '<t>Thường thì, tôi thức dậy lúc</t> <k>6 giờ sáng</k><t>. Lý do là vì</t> <k>tôi cần thời gian để chuẩn bị cho công việc</k><t>. Ví dụ,</t> <k>tôi mất khoảng một giờ để nấu bữa sáng và thay quần áo</k><t>.</t>' },
+                    { q: 'What do you do on the weekends?', q_vi: 'Bạn thường làm gì vào cuối tuần?', a: '<t>During the weekends, I tend to</t> <k>catch up on my sleep</k><t>. This is because</t> <k>my weekdays are intensely stressful</k><t>. For instance,</t> <k>we often go to a cozy cafe to recharge our batteries</k><t>.</t>', a_vi: '<t>Vào cuối tuần, tôi thường</t> <k>dọn dẹp nhà cửa và nghỉ ngơi</k><t>. Điều này là bởi vì</t> <k>tôi muốn tái tạo năng lượng sau một tuần làm việc mệt mỏi</k><t>. Chẳng hạn,</t> <k>tôi có thể ngủ nướng đến tận 9 giờ sáng</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'early bird', ipa: '/ˈɜːrli bɜːrd/', mean: 'người dậy sớm' },
@@ -86,8 +86,8 @@ window.vstepData = {
             {
                 id: 'sp1_7', title: 'Topic 7: Shopping',
                 questions: [
-                    { q: 'Do you enjoy shopping?', a: '<t>To be honest, I am quite fond of</t> <k>shopping online via e-commerce platforms</k><t>. The reason is that</t> <k>it is incredibly convenient</k><t>. For example,</t> <k>I can compare prices with just a few clicks</k><t>.</t>' },
-                    { q: 'Do you prefer buying brand-name clothes?', a: '<t>Not really. I generally prefer</t> <k>affordable and practical clothes</k><t>. This is because</t> <k>I want to save money for travel</k><t>. For instance,</t> <k>a basic t-shirt serves the same purpose as a pricey one</k><t>.</t>' }
+                    { q: 'Do you enjoy shopping?', q_vi: 'Bạn có thích đi mua sắm không?', a: '<t>To be honest, I am quite fond of</t> <k>shopping online via e-commerce platforms</k><t>. The reason is that</t> <k>it is incredibly convenient</k><t>. For example,</t> <k>I can compare prices with just a few clicks</k><t>.</t>', a_vi: '<t>Thành thật mà nói, tôi là</t> <k>một tín đồ mua sắm</k><t>. Lý do chính là vì</t> <k>việc mua đồ mới mang lại cho tôi niềm vui</k><t>. Ví dụ,</t> <k>tôi thường tự thưởng cho mình một chiếc áo mới sau khi nhận lương</k><t>.</t>' },
+                    { q: 'Do you prefer buying brand-name clothes?', q_vi: 'Bạn có thích mua quần áo hàng hiệu không?', a: '<t>Not really. I generally prefer</t> <k>affordable and practical clothes</k><t>. This is because</t> <k>I want to save money for travel</k><t>. For instance,</t> <k>a basic t-shirt serves the same purpose as a pricey one</k><t>.</t>', a_vi: '<t>Thực tế là tôi</t> <k>không quan tâm lắm đến hàng hiệu</k><t>. Điều này là do</t> <k>chúng thường quá đắt đỏ so với ngân sách của tôi</k><t>. Thay vào đó,</t> <k>tôi thường chọn quần áo giá cả bình dân nhưng có chất lượng tốt</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'e-commerce', ipa: '/ˈiː kɒmɜːrs/', mean: 'thương mại điện tử' },
@@ -99,8 +99,8 @@ window.vstepData = {
             {
                 id: 'sp1_8', title: 'Topic 8: Travel',
                 questions: [
-                    { q: 'Where did you go for your last holiday?', a: '<t>Last summer, I took a memorable trip to</t> <k>Da Nang, a coastal city</k><t>. The reason I chose this destination was that</t> <k>it is renowned for its pristine beaches</k><t>. For example,</t> <k>I had a fantastic time exploring the mountains</k><t>.</t>' },
-                    { q: 'Do you prefer traveling alone or with others?', a: '<t>Personally, I heavily lean towards</t> <k>traveling with a group</k><t>. This is because</t> <k>it allows us to share expenses</k><t>. For instance,</t> <k>we can split the bill for accommodation</k><t>.</t>' }
+                    { q: 'Where did you go for your last holiday?', q_vi: 'Kỳ nghỉ trước bạn đã đi đâu?', a: '<t>Last summer, I took a memorable trip to</t> <k>Da Nang, a coastal city</k><t>. The reason I chose this destination was that</t> <k>it is renowned for its pristine beaches</k><t>. For example,</t> <k>I had a fantastic time exploring the mountains</k><t>.</t>', a_vi: '<t>Trong kỳ nghỉ trước, tôi đã đến thăm</t> <k>Thành phố Đà Lạt</k><t>. Lý do tôi chọn nơi này là vì</t> <k>khí hậu ở đó rất mát mẻ và dễ chịu</k><t>. Chẳng hạn,</t> <k>tôi đã có một trải nghiệm tuyệt vời khi đi săn mây vào sáng sớm</k><t>.</t>' },
+                    { q: 'Do you prefer traveling alone or with others?', q_vi: 'Bạn thích đi du lịch một mình hay với người khác?', a: '<t>Personally, I heavily lean towards</t> <k>traveling with a group</k><t>. This is because</t> <k>it allows us to share expenses</k><t>. For instance,</t> <k>we can split the bill for accommodation</k><t>.</t>', a_vi: '<t>Theo tôi, tôi thích</t> <k>đi cùng gia đình hoặc bạn bè hơn</k><t>. Điều này là bởi vì</t> <k>tôi có thể chia sẻ niềm vui và kỷ niệm với họ</k><t>. Ví dụ,</t> <k>chúng tôi thường chụp rất nhiều ảnh kỷ niệm trong các chuyến đi</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'coastal', ipa: '/ˈkəʊstl/', mean: 'thuộc bờ biển' },
@@ -112,7 +112,7 @@ window.vstepData = {
             {
                 id: 'sp1_9', title: 'Topic 9: Food & Cooking',
                 questions: [
-                    { q: 'Do you know how to cook?', a: '<t>Yes, I am quite adept at</t> <k>preparing traditional dishes</k><t>. The main reason I learned to cook is that</t> <k>it is much healthier</k><t>. For example,</t> <k>I often make braised pork for dinner</k><t>.</t>' },
+                    { q: 'Do you know how to cook?', q_vi: 'Bạn có biết nấu ăn không?', a: '<t>Yes, I am quite adept at</t> <k>preparing traditional dishes</k><t>. The main reason I learned to cook is that</t> <k>it is much healthier</k><t>. For example,</t> <k>I often make braised pork for dinner</k><t>.</t>', a_vi: '<t>Vâng, tôi khá tự tin về</t> <k>kỹ năng nấu ăn của mình</k><t>. Lý do là vì</t> <k>mẹ tôi đã dạy tôi từ khi còn nhỏ</k><t>. Chẳng hạn,</t> <k>tôi có thể dễ dàng nấu một bữa ăn truyền thống của Việt Nam cho gia đình</k><t>.</t>' },
                     { q: 'What is your favorite food?', q_vi: 'Món ăn yêu thích của bạn là gì?', a: '<t>Without hesitation, my all-time favorite is</t> <k>Pho, the iconic beef noodle soup</k><t>. This is because</t> <k>the broth is incredibly flavorful</k><t>. For instance,</t> <k>I can eat Pho every day without getting sick of it</k><t>.</t>', a_vi: '<t>Chắc chắn rồi, món tôi thích nhất là</t> <k>Phở</k><t>. Lý do chính là vì</t> <k>nước dùng của nó vô cùng đậm đà</k><t>. Ví dụ,</t> <k>tôi thường ăn một bát phở bò vào mỗi buổi sáng Chủ nhật</k><t>.</t>' }
                 ],
                 vocab: [
@@ -125,8 +125,8 @@ window.vstepData = {
             {
                 id: 'sp1_10', title: 'Topic 10: Social Media',
                 questions: [
-                    { q: 'How often do you use the internet?', a: '<t>To be honest, I use the internet</t> <k>almost constantly</k><t>. The primary reason is that</t> <k>my job requires me to stay online</k><t>. For example,</t> <k>I always have several tabs open for research</k><t>.</t>' },
-                    { q: 'What is your favorite social media platform?', a: '<t>At present, I am totally hooked on</t> <k>YouTube</k><t>. This is because</t> <k>it is a massive repository of knowledge</k><t>. For instance,</t> <k>I have learned how to code simply by watching tutorials</k><t>.</t>' }
+                    { q: 'How often do you use the internet?', q_vi: 'Bạn có thường xuyên sử dụng internet không?', a: '<t>To be honest, I use the internet</t> <k>almost constantly</k><t>. The primary reason is that</t> <k>my job requires me to stay online</k><t>. For example,</t> <k>I always have several tabs open for research</k><t>.</t>', a_vi: '<t>Thành thật mà nói, tôi sử dụng internet</t> <k>hàng ngày</k><t>. Lý do chính là vì</t> <k>nó rất cần thiết cho công việc và học tập của tôi</k><t>. Ví dụ,</t> <k>tôi dành khoảng 5 tiếng mỗi ngày để gửi email và tra cứu thông tin</k><t>.</t>' },
+                    { q: 'What is your favorite social media platform?', q_vi: 'Mạng xã hội yêu thích của bạn là gì?', a: '<t>At present, I am totally hooked on</t> <k>YouTube</k><t>. This is because</t> <k>it is a massive repository of knowledge</k><t>. For instance,</t> <k>I have learned how to code simply by watching tutorials</k><t>.</t>', a_vi: '<t>Mạng xã hội mà tôi thích nhất là</t> <k>Facebook</k><t>. Điều này là do</t> <k>nó giúp tôi giữ liên lạc với bạn bè cũ</k><t>. Chẳng hạn,</t> <k>tôi thường xem ảnh cập nhật từ những người bạn học đại học của mình</k><t>.</t>' }
                 ],
                 vocab: [
                     { word: 'constantly', ipa: '/ˈkɒnstəntli/', mean: 'liên tục' },
