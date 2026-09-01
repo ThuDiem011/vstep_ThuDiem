@@ -73,6 +73,7 @@
                 <div class="flex space-x-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
                     <button onclick="switchMainTab('speaking')" id="tab-speaking" class="main-tab-btn active px-5 py-2.5 rounded-lg bg-white text-primary shadow font-semibold transition-all hover:scale-105"><i class="fa-solid fa-microphone mr-2"></i>Speaking</button>
                     <button onclick="switchMainTab('writing')" id="tab-writing" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-pen-nib mr-2"></i>Writing</button>
+                    <button onclick="switchMainTab('listening')" id="tab-listening" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-headphones mr-2"></i>Listening</button>
                     <button onclick="switchMainTab('reading')" id="tab-reading" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-book-open mr-2"></i>Reading</button>
                     <button onclick="switchMainTab('guide')" id="tab-guide" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-clipboard-list mr-2"></i>📋 Cấu Trúc Đề & Mẹo Thi</button>
                 </div>
@@ -207,6 +208,57 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div id="wt2-content" class="lg:col-span-2 bg-white p-8 rounded-xl border border-slate-100 shadow-sm text-[1.05rem] leading-loose"></div>
                     <div id="wt2-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTENING TAB -->
+        <section id="content-listening" class="main-tab-content">
+            <div class="glass-panel rounded-2xl p-6 mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+                    <select id="ls-select" class="w-full md:w-64 p-3 border-2 border-teal-200 bg-teal-50 rounded-xl outline-none focus:border-teal-500 transition font-medium" onchange="renderListening()"></select>
+                    <div class="flex bg-slate-100 p-1 rounded-xl border border-slate-200">
+                        <button id="btn-ls-study-mode" onclick="setListeningMode('study')" class="px-5 py-2 rounded-lg bg-white text-teal-600 shadow font-bold transition-all"><i class="fa-solid fa-headphones-simple mr-2"></i>Study</button>
+                        <button id="btn-ls-test-mode" onclick="setListeningMode('test')" class="px-5 py-2 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-white transition-all font-bold"><i class="fa-solid fa-stopwatch mr-2"></i>Test</button>
+                    </div>
+                </div>
+                <div id="ls-timer-display" class="text-3xl font-display font-bold text-rose-500 hidden bg-rose-50 px-6 py-2 rounded-xl border border-rose-100 shadow-inner tracking-wider">40:00</div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6 flex flex-col md:flex-row reading-container relative">
+                <!-- Audio Player -->
+                <div class="w-full md:w-1/2 passage-panel">
+                    <h3 id="ls-title" class="text-2xl font-display font-bold mb-6 text-slate-800 sticky top-0 bg-white/90 backdrop-blur pb-2 pt-2 z-10"></h3>
+                    <div class="bg-teal-50 border border-teal-200 p-6 rounded-xl flex flex-col items-center justify-center mb-6">
+                        <i class="fa-solid fa-compact-disc text-6xl text-teal-300 mb-4 animate-[spin_4s_linear_infinite]"></i>
+                        <audio id="ls-audio" controls class="w-full">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Questions -->
+                <div class="w-full md:w-1/2 questions-panel mt-8 md:mt-0 relative">
+                    <h3 class="text-xl font-display font-bold mb-6 sticky top-0 bg-white/90 backdrop-blur pb-2 pt-2 z-10 text-slate-800">Questions</h3>
+                    <div id="ls-questions" class="space-y-6 pb-20"></div>
+                    
+                    <div id="ls-test-submit-area" class="absolute bottom-0 left-4 right-0 p-4 bg-white/90 backdrop-blur border-t border-slate-200 hidden">
+                        <button onclick="submitListeningTest()" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl shadow-lg text-lg transition-all transform hover:-translate-y-1">Submit & Grade</button>
+                    </div>
+                    
+                    <!-- Result Overlay -->
+                    <div id="ls-test-result" class="hidden absolute inset-0 z-20 bg-slate-900/40 backdrop-blur-sm flex flex-col items-center justify-center rounded-xl p-6 text-center">
+                        <div class="bg-white p-10 rounded-2xl shadow-2xl max-w-md w-full animate-[fadeIn_0.3s_ease-out]">
+                            <i class="fa-solid fa-medal text-7xl text-amber-400 mb-6 drop-shadow-md"></i>
+                            <h2 class="text-3xl font-display font-bold mb-2 text-slate-800">Test Completed</h2>
+                            <p id="ls-score-display" class="text-xl mb-4 text-slate-600 font-medium">Score: 0/35</p>
+                            <div class="bg-teal-50 border border-teal-100 rounded-xl p-4 mb-8">
+                                <p class="text-sm text-teal-600 font-bold uppercase tracking-wide mb-1">CEFR Level</p>
+                                <p id="ls-level-display" class="text-3xl font-display font-black text-teal-700">-</p>
+                            </div>
+                            <button onclick="setListeningMode('study')" class="w-full px-6 py-3.5 bg-slate-800 text-white font-bold rounded-xl shadow hover:bg-slate-700 transition-colors">Review Answers</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -517,6 +569,7 @@
             document.querySelectorAll('.main-tab-btn').forEach(el => {
                 el.classList.remove('active', 'bg-white', 'text-primary', 'shadow');
                 if(el.id.includes('reading')) el.classList.remove('text-indigo-600');
+                if(el.id.includes('listening')) el.classList.remove('text-teal-600');
                 el.classList.add('text-slate-600');
             });
             document.getElementById('content-' + tabId).classList.add('active');
@@ -557,6 +610,7 @@
             renderWriting1();
             initWriting2();
             renderReading();
+            if(window.vstepData.listening) renderListening();
         };
 
         function populate(selectId, dataArr, defaultOption = "-- [Xem Khung Sườn Mẫu (Blueprint)] --") {
@@ -573,6 +627,7 @@
             populate('sp3-select', db.speaking.part3);
             populate('wt1-select', db.writing.task1);
             populate('rd-select', db.reading, "-- [Chọn Bài Thi (Mock Test)] --");
+            if(db.listening) populate('ls-select', db.listening, "-- [Chọn Bài Nghe (Listening Test)] --");
         }
 
         // Blueprint Logic
@@ -1072,6 +1127,7 @@
                 document.getElementById('rd-select').disabled = false;
             }
             renderReading();
+            if(window.vstepData.listening) renderListening();
         }
 
         function updateTimerDisplay() {
@@ -1099,6 +1155,150 @@
             document.getElementById('level-display').innerText = level;
             document.getElementById('test-result').classList.remove('hidden');
         }
-    </script>
+    
+        // --- LISTENING LOGIC ---
+        let lsMode = 'study'; // 'study' or 'test'
+        let lsUserAnswers = {};
+        let lsTimerInterval;
+        let lsTimeLeft = 40 * 60; // 40 minutes
+
+        function renderListening() {
+            const index = document.getElementById('ls-select').value;
+            if(index === "") {
+                document.getElementById('ls-title').innerText = "VSTEP Listening Test";
+                document.getElementById('ls-audio').querySelector('source').src = "";
+                document.getElementById('ls-audio').load();
+                document.getElementById('ls-questions').innerHTML = `<p class="text-slate-500 italic">Vui lòng chọn bài thi ở danh sách bên trên.</p>`;
+                return;
+            }
+            const data = window.vstepData.listening[index];
+            document.getElementById('ls-title').innerText = data.title;
+            
+            const audioSrc = document.getElementById('ls-audio').querySelector('source');
+            if (audioSrc.src.indexOf(data.audioSrc) === -1) {
+                audioSrc.src = data.audioSrc;
+                document.getElementById('ls-audio').load();
+            }
+
+            let qHtml = '';
+            data.questions.forEach((q, i) => {
+                const uAns = lsUserAnswers[i];
+                let isCorrect = (uAns === q.correct);
+                
+                let optHtml = '';
+                q.options.forEach((opt, j) => {
+                    let btnClass = "border-slate-200 hover:border-teal-400 bg-white text-slate-700";
+                    let iconHtml = `<div class="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center mr-3 shrink-0"><span class="text-xs font-bold text-slate-400">${['A','B','C','D'][j]}</span></div>`;
+                    
+                    if(lsMode === 'study') {
+                        if(uAns === j) {
+                            if(isCorrect) {
+                                btnClass = "border-emerald-500 bg-emerald-50 text-emerald-800 ring-2 ring-emerald-200";
+                                iconHtml = `<div class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center mr-3 shrink-0 shadow-sm"><i class="fa-solid fa-check text-xs"></i></div>`;
+                            } else {
+                                btnClass = "border-rose-500 bg-rose-50 text-rose-800 ring-2 ring-rose-200";
+                                iconHtml = `<div class="w-6 h-6 rounded-full bg-rose-500 text-white flex items-center justify-center mr-3 shrink-0 shadow-sm"><i class="fa-solid fa-times text-xs"></i></div>`;
+                            }
+                        } else if(j === q.correct && uAns !== undefined) {
+                            btnClass = "border-emerald-500 bg-emerald-50 text-emerald-800 ring-2 ring-emerald-200";
+                            iconHtml = `<div class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center mr-3 shrink-0 shadow-sm"><i class="fa-solid fa-check text-xs"></i></div>`;
+                        }
+                    } else if(lsMode === 'test') {
+                        if(uAns === j) {
+                            btnClass = "border-teal-500 bg-teal-50 text-teal-800 ring-2 ring-teal-200";
+                            iconHtml = `<div class="w-6 h-6 rounded-full bg-teal-500 text-white flex items-center justify-center mr-3 shrink-0 shadow-sm"><i class="fa-solid fa-dot-circle text-xs"></i></div>`;
+                        }
+                    }
+
+                    optHtml += `<button onclick="lsSelectAnswer(${i}, ${j})" class="w-full text-left p-3.5 mb-3 rounded-xl border-2 ${btnClass} transition-all duration-200 flex items-center shadow-sm">
+                        ${iconHtml}
+                        <span class="font-medium">${opt}</span>
+                    </button>`;
+                });
+
+                let expHtml = '';
+                if(lsMode === 'study' && uAns !== undefined) {
+                    expHtml = `<div class="mt-4 p-4 rounded-xl bg-blue-50 border border-blue-200 animate-[fadeIn_0.3s_ease-out]">
+                        <p class="text-sm font-bold text-blue-700 mb-1"><i class="fa-solid fa-lightbulb mr-1"></i>Explanation:</p>
+                        <p class="text-sm text-slate-700">${q.explanation}</p>
+                    </div>`;
+                }
+
+                qHtml += `
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm mb-6" id="ls-q-${i}">
+                    <p class="font-bold text-lg text-slate-800 mb-4"><span class="bg-slate-100 text-slate-500 px-2 py-1 rounded-md text-sm mr-2">Q${i+1}</span> ${q.q}</p>
+                    <div>${optHtml}</div>
+                    ${expHtml}
+                </div>`;
+            });
+            document.getElementById('ls-questions').innerHTML = qHtml;
+        }
+
+        function lsSelectAnswer(qIndex, optIndex) {
+            lsUserAnswers[qIndex] = optIndex;
+            renderListening();
+        }
+
+        function setListeningMode(mode) {
+            lsMode = mode;
+            lsUserAnswers = {}; 
+            
+            document.getElementById('btn-ls-study-mode').className = mode === 'study' ? "px-5 py-2 rounded-lg bg-white text-teal-600 shadow font-bold transition-all" : "px-5 py-2 rounded-lg text-slate-600 hover:text-teal-600 hover:bg-white transition-all font-bold";
+            document.getElementById('btn-ls-test-mode').className = mode === 'test' ? "px-5 py-2 rounded-lg bg-white text-rose-600 shadow font-bold transition-all" : "px-5 py-2 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-white transition-all font-bold";
+            
+            document.getElementById('ls-test-result').classList.add('hidden');
+            
+            const selectedIndex = document.getElementById('ls-select').value;
+            
+            if(mode === 'test') {
+                document.getElementById('ls-timer-display').classList.remove('hidden');
+                if(selectedIndex !== "") document.getElementById('ls-test-submit-area').classList.remove('hidden');
+                document.getElementById('ls-select').disabled = true;
+                
+                lsTimeLeft = 40 * 60;
+                updateLsTimerDisplay();
+                lsTimerInterval = setInterval(() => {
+                    lsTimeLeft--;
+                    updateLsTimerDisplay();
+                    if(lsTimeLeft <= 0) {
+                        clearInterval(lsTimerInterval);
+                        submitListeningTest();
+                    }
+                }, 1000);
+            } else {
+                document.getElementById('ls-timer-display').classList.add('hidden');
+                document.getElementById('ls-test-submit-area').classList.add('hidden');
+                document.getElementById('ls-select').disabled = false;
+                clearInterval(lsTimerInterval);
+            }
+            renderListening();
+        }
+
+        function updateLsTimerDisplay() {
+            const m = Math.floor(lsTimeLeft / 60).toString().padStart(2, '0');
+            const s = (lsTimeLeft % 60).toString().padStart(2, '0');
+            document.getElementById('ls-timer-display').innerText = `${m}:${s}`;
+        }
+
+        function submitListeningTest() {
+            clearInterval(lsTimerInterval);
+            const index = document.getElementById('ls-select').value;
+            if(index === "") return;
+            
+            const data = window.vstepData.listening[index];
+            let score = 0;
+            for(let i = 0; i < data.questions.length; i++) {
+                if(lsUserAnswers[i] === data.questions[i].correct) score++;
+            }
+            let level = "Below B1";
+            if(score >= 12) level = "B1 (Passable)";
+            if(score >= 21) level = "B2 (Good)";
+            if(score >= 28) level = "C1 (Excellent)";
+            
+            document.getElementById('ls-score-display').innerText = `Score: ${score} / ${data.questions.length}`;
+            document.getElementById('ls-level-display').innerText = level;
+            document.getElementById('ls-test-result').classList.remove('hidden');
+        }
+</script>
 </body>
 </html>

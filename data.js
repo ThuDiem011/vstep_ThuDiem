@@ -5074,5 +5074,1183 @@ window.vstepData = {
                         }
                 ]
         }
-    ]
+    ],
+    listening: [
+        {
+                "id": "ls_1",
+                "title": "Listening Test 1",
+                "audioSrc": "audio/vstep_listening_test1.mp3",
+                "questions": [
+                        {
+                                "q": "Question 1 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 2 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 3 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 4 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 5 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 6 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 7 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 8 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 9 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 10 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 11 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 12 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 13 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 14 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 15 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 16 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 17 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 18 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 19 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 20 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 21 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 22 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 23 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 24 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 25 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 26 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 27 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 28 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 29 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 30 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 31 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 32 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 33 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 34 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 35 for Listening Test 1",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        }
+                ]
+        },
+        {
+                "id": "ls_2",
+                "title": "Listening Test 2",
+                "audioSrc": "audio/vstep_listening_test2.mp3",
+                "questions": [
+                        {
+                                "q": "Question 1 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 2 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 3 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 4 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 5 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 6 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 7 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 8 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 9 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 10 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 11 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 12 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 13 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 14 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 15 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 16 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 17 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 18 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 19 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 20 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 21 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 22 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 23 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 24 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 25 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 26 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 27 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 28 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 29 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 30 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 31 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 32 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 33 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 34 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 35 for Listening Test 2",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        }
+                ]
+        },
+        {
+                "id": "ls_3",
+                "title": "Listening Test 3",
+                "audioSrc": "audio/vstep_listening_test3.mp3",
+                "questions": [
+                        {
+                                "q": "Question 1 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 2 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 3 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 4 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 5 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 6 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 7 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 8 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 9 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 10 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 11 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 12 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 13 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 14 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 15 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 16 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 17 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 18 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 19 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 20 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 21 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 22 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 23 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 24 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 25 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 26 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 27 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 28 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 29 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 30 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 31 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 32 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 1,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 33 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 2,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 34 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 3,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        },
+                        {
+                                "q": "Question 35 for Listening Test 3",
+                                "options": [
+                                        "Option A",
+                                        "Option B",
+                                        "Option C",
+                                        "Option D"
+                                ],
+                                "correct": 0,
+                                "explanation": "Giải thích cho câu hỏi này."
+                        }
+                ]
+        }
+]
 };
