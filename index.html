@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSTEP B2 Mastery - Premium Prep</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Use Inter for body and Be Vietnam Pro for Headings (Perfect Vietnamese Support) -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'], 
+                        display: ['"Be Vietnam Pro"', 'sans-serif'] 
+                    },
+                    colors: {
+                        primary: '#4f46e5', secondary: '#0ea5e9',
+                        dark: '#0f172a', light: '#f8fafc',
+                        accent: '#f59e0b'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(135deg, #e0e7ff 0%, #f0f9ff 100%); min-height: 100vh; }
+        .glass-panel { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.5); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .main-tab-content, .sub-tab-content { display: none; animation: fadeIn 0.4s ease-out; }
+        .main-tab-content.active, .sub-tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .template-highlight { background-color: #fef08a; color: #713f12; padding: 2px 6px; border-radius: 6px; font-weight: 500; font-size: 0.95em; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .keyword-highlight { color: #2563eb; font-weight: 700; background-color: #eff6ff; padding: 2px 6px; border-radius: 6px; border: 1px dashed #3b82f6; }
+        .blueprint-keyword { color: #059669; font-weight: 700; background-color: #d1fae5; padding: 2px 6px; border-radius: 6px; border: 1px dashed #10b981; }
+        
+        /* Reading Split View */
+        .reading-container { height: calc(100vh - 220px); }
+        .passage-panel { height: 100%; overflow-y: auto; padding-right: 20px; border-right: 2px solid #e2e8f0; }
+        .questions-panel { height: 100%; overflow-y: auto; padding-left: 20px; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* Mindmap Grid */
+        .mindmap-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .mindmap-node { background: white; border: 2px dashed #94a3b8; border-radius: 8px; padding: 12px; text-align: center; font-weight: 600; color: #64748b; transition: all 0.2s; }
+        .mindmap-node.filled { border: 2px solid #e2e8f0; border-style: solid; color: #334155; }
+        .mindmap-node.filled:hover { border-color: #3b82f6; transform: translateY(-2px); box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1); }
+        .mindmap-center { grid-column: 1 / -1; background: #eff6ff; border-color: #3b82f6; border-style: solid; color: #1d4ed8; font-size: 1.1em; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased font-sans">
+
+    <!-- Header -->
+    <header class="glass-panel sticky top-0 z-50 mb-6">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-4 md:mb-0">
+                <i class="fa-solid fa-graduation-cap text-primary mr-2"></i>VSTEP B2 PRO
+            </h1>
+            <div class="flex items-center gap-4">
+                <label class="flex items-center gap-2 cursor-pointer bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200 hover:bg-emerald-100 transition shadow-sm">
+                    <input type="checkbox" id="toggle-translation" class="w-4 h-4 text-emerald-600 rounded cursor-pointer" checked onchange="toggleTranslation(this.checked)">
+                    <span class="text-sm font-bold text-emerald-700">🇻🇳 Dịch Song Ngữ</span>
+                </label>
+                <div class="flex space-x-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
+                    <button onclick="switchMainTab('speaking')" id="tab-speaking" class="main-tab-btn active px-5 py-2.5 rounded-lg bg-white text-primary shadow font-semibold transition-all hover:scale-105"><i class="fa-solid fa-microphone mr-2"></i>Speaking</button>
+                    <button onclick="switchMainTab('writing')" id="tab-writing" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-pen-nib mr-2"></i>Writing</button>
+                    <button onclick="switchMainTab('reading')" id="tab-reading" class="main-tab-btn px-5 py-2.5 rounded-lg text-slate-600 hover:text-primary hover:bg-white transition-all hover:scale-105"><i class="fa-solid fa-book-open mr-2"></i>Reading</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-12">
+        
+        <!-- SPEAKING TAB -->
+        <section id="content-speaking" class="main-tab-content active">
+            <!-- Speaking Sub-Navigation -->
+            <div class="flex space-x-3 mb-6 bg-white/50 p-2 rounded-xl backdrop-blur-sm border border-slate-200 w-max">
+                <button onclick="switchSubTab('sp1', 'speaking')" id="subtab-sp1" class="subtab-btn-speaking active px-6 py-2 rounded-lg bg-blue-100 text-blue-700 font-bold shadow-sm transition-all">Part 1: Social</button>
+                <button onclick="switchSubTab('sp2', 'speaking')" id="subtab-sp2" class="subtab-btn-speaking px-6 py-2 rounded-lg text-slate-600 hover:bg-purple-100 hover:text-purple-700 font-bold transition-all">Part 2: Solution</button>
+                <button onclick="switchSubTab('sp3', 'speaking')" id="subtab-sp3" class="subtab-btn-speaking px-6 py-2 rounded-lg text-slate-600 hover:bg-emerald-100 hover:text-emerald-700 font-bold transition-all">Part 3: Topic</button>
+            </div>
+
+            <!-- Part 1 Content -->
+            <div id="content-sp1" class="sub-tab-content active glass-panel rounded-2xl p-8">
+                <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 font-bold text-xl">1</div>
+                        <h2 class="text-2xl font-display font-bold text-slate-800">Social Interaction</h2>
+                    </div>
+                    <select id="sp1-select" class="w-full md:w-1/3 p-3 border-2 border-blue-200 bg-blue-50 rounded-xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition font-medium" onchange="renderSpeaking1()"></select>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div id="sp1-content" class="lg:col-span-2 space-y-6"></div>
+                    <div id="sp1-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+
+            <!-- Part 2 Content -->
+            <div id="content-sp2" class="sub-tab-content glass-panel rounded-2xl p-8">
+                <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-4 font-bold text-xl">2</div>
+                        <h2 class="text-2xl font-display font-bold text-slate-800">Solution Discussion</h2>
+                    </div>
+                    <select id="sp2-select" class="w-full md:w-1/3 p-3 border-2 border-purple-200 bg-purple-50 rounded-xl outline-none focus:border-purple-500 focus:ring-4 focus:ring-purple-100 transition font-medium" onchange="renderSpeaking2()"></select>
+                </div>
+                
+                <!-- Prompt Box -->
+                <div class="bg-slate-50 border-2 border-slate-200 rounded-xl p-6 mb-6 shadow-inner">
+                    <h3 class="font-bold text-slate-500 uppercase tracking-wider text-sm mb-4"><i class="fa-solid fa-clipboard-question mr-2"></i>Prompt Box</h3>
+                    <div class="mb-4">
+                        <span class="font-bold text-slate-700">Situation:</span> 
+                        <span id="sp2-prompt-situation" class="text-slate-600 italic"></span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-700 block mb-2">Options:</span>
+                        <ul id="sp2-prompt-options" class="grid grid-cols-1 md:grid-cols-3 gap-3"></ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div id="sp2-content" class="lg:col-span-2 bg-white p-6 rounded-xl border border-slate-100 shadow-sm text-[1.05rem] leading-loose"></div>
+                    <div id="sp2-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+
+            <!-- Part 3 Content -->
+            <div id="content-sp3" class="sub-tab-content glass-panel rounded-2xl p-8">
+                <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4 font-bold text-xl">3</div>
+                        <h2 class="text-2xl font-display font-bold text-slate-800">Topic Development</h2>
+                    </div>
+                    <select id="sp3-select" class="w-full md:w-1/3 p-3 border-2 border-emerald-200 bg-emerald-50 rounded-xl outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 transition font-medium" onchange="renderSpeaking3()"></select>
+                </div>
+                
+                <!-- Prompt Box -->
+                <div class="bg-slate-50 border-2 border-slate-200 rounded-xl p-6 mb-6 shadow-inner flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-slate-500 uppercase tracking-wider text-sm mb-4"><i class="fa-solid fa-sitemap mr-2"></i>Prompt Box</h3>
+                        <div class="font-bold text-slate-700 mb-2">Central Topic:</div>
+                        <div id="sp3-prompt-topic" class="text-xl font-display font-bold text-slate-400 mb-4 italic">[Central Topic]</div>
+                    </div>
+                    <div class="flex-1 w-full mindmap-grid" id="sp3-prompt-mindmap"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div id="sp3-content" class="lg:col-span-2 bg-white p-6 rounded-xl border border-slate-100 shadow-sm text-[1.05rem] leading-loose"></div>
+                    <div id="sp3-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WRITING TAB -->
+        <section id="content-writing" class="main-tab-content">
+            <!-- Writing Sub-Navigation -->
+            <div class="flex space-x-3 mb-6 bg-white/50 p-2 rounded-xl backdrop-blur-sm border border-slate-200 w-max">
+                <button onclick="switchSubTab('wt1', 'writing')" id="subtab-wt1" class="subtab-btn-writing active px-6 py-2 rounded-lg bg-orange-100 text-orange-700 font-bold shadow-sm transition-all">Task 1: Letter</button>
+                <button onclick="switchSubTab('wt2', 'writing')" id="subtab-wt2" class="subtab-btn-writing px-6 py-2 rounded-lg text-slate-600 hover:bg-rose-100 hover:text-rose-700 font-bold transition-all">Task 2: Essay</button>
+            </div>
+
+            <!-- Task 1 Content -->
+            <div id="content-wt1" class="sub-tab-content active glass-panel rounded-2xl p-8">
+                <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mr-4 font-bold text-xl">1</div>
+                        <h2 class="text-2xl font-display font-bold text-slate-800">Letter Writing</h2>
+                    </div>
+                    <select id="wt1-select" class="w-full md:w-1/3 p-3 border-2 border-orange-200 bg-orange-50 rounded-xl outline-none focus:border-orange-500 focus:ring-4 focus:ring-orange-100 transition font-medium" onchange="renderWriting1()"></select>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div id="wt1-content" class="lg:col-span-2 bg-white p-8 rounded-xl border border-slate-100 shadow-sm text-[1.05rem] leading-relaxed"></div>
+                    <div id="wt1-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+
+            <!-- Task 2 Content -->
+            <div id="content-wt2" class="sub-tab-content glass-panel rounded-2xl p-8">
+                <div class="flex items-center mb-6 border-b border-slate-200 pb-4">
+                    <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4 font-bold text-xl">2</div>
+                    <h2 class="text-2xl font-display font-bold text-slate-800">Academic Essay (Strict Formatting)</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-500 mb-2 uppercase"><i class="fa-solid fa-layer-group mr-2"></i>Essay Type</label>
+                        <select id="wt2-type-select" class="w-full p-3 border-2 border-slate-200 bg-white rounded-xl outline-none focus:border-rose-500 transition font-medium" onchange="updateWriting2Topics()"></select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-500 mb-2 uppercase"><i class="fa-solid fa-list-check mr-2"></i>Topic Selection</label>
+                        <select id="wt2-topic-select" class="w-full p-3 border-2 border-slate-200 bg-white rounded-xl outline-none focus:border-rose-500 transition font-medium" onchange="renderWriting2()"></select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div id="wt2-content" class="lg:col-span-2 bg-white p-8 rounded-xl border border-slate-100 shadow-sm text-[1.05rem] leading-loose"></div>
+                    <div id="wt2-vocab" class="lg:col-span-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- READING TAB -->
+        <section id="content-reading" class="main-tab-content">
+            <div class="glass-panel rounded-2xl p-6 mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+                    <select id="rd-select" class="w-full md:w-64 p-3 border-2 border-indigo-200 bg-indigo-50 rounded-xl outline-none focus:border-indigo-500 transition font-medium" onchange="renderReading()"></select>
+                    <div class="flex bg-slate-100 p-1 rounded-xl border border-slate-200">
+                        <button id="btn-study-mode" onclick="setReadingMode('study')" class="px-5 py-2 rounded-lg bg-white text-indigo-600 shadow font-bold transition-all"><i class="fa-solid fa-book-open-reader mr-2"></i>Study</button>
+                        <button id="btn-test-mode" onclick="setReadingMode('test')" class="px-5 py-2 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-white transition-all font-bold"><i class="fa-solid fa-stopwatch mr-2"></i>Test</button>
+                    </div>
+                </div>
+                <div id="timer-display" class="text-3xl font-display font-bold text-rose-500 hidden bg-rose-50 px-6 py-2 rounded-xl border border-rose-100 shadow-inner tracking-wider">15:00</div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6 flex flex-col md:flex-row reading-container relative">
+                <!-- Passage -->
+                <div class="w-full md:w-1/2 passage-panel">
+                    <h3 id="rd-title" class="text-2xl font-display font-bold mb-6 text-slate-800 sticky top-0 bg-white/90 backdrop-blur pb-2 pt-2 z-10"></h3>
+                    <div id="rd-text" class="text-[1.05rem] leading-loose text-slate-700 text-justify"></div>
+                </div>
+                <!-- Questions -->
+                <div class="w-full md:w-1/2 questions-panel mt-8 md:mt-0 relative">
+                    <h3 class="text-xl font-display font-bold mb-6 sticky top-0 bg-white/90 backdrop-blur pb-2 pt-2 z-10 text-slate-800">Questions</h3>
+                    <div id="rd-questions" class="space-y-6 pb-20"></div>
+                    
+                    <div id="test-submit-area" class="absolute bottom-0 left-4 right-0 p-4 bg-white/90 backdrop-blur border-t border-slate-200 hidden">
+                        <button onclick="submitTest()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-xl shadow-lg text-lg transition-all transform hover:-translate-y-1">Submit & Grade</button>
+                    </div>
+                    
+                    <!-- Result Overlay -->
+                    <div id="test-result" class="hidden absolute inset-0 z-20 bg-slate-900/40 backdrop-blur-sm flex flex-col items-center justify-center rounded-xl p-6 text-center">
+                        <div class="bg-white p-10 rounded-2xl shadow-2xl max-w-md w-full animate-[fadeIn_0.3s_ease-out]">
+                            <i class="fa-solid fa-medal text-7xl text-amber-400 mb-6 drop-shadow-md"></i>
+                            <h2 class="text-3xl font-display font-bold mb-2 text-slate-800">Test Completed</h2>
+                            <p id="score-display" class="text-xl mb-4 text-slate-600 font-medium">Score: 0/5</p>
+                            <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-8">
+                                <p class="text-sm text-indigo-600 font-bold uppercase tracking-wide mb-1">CEFR Level</p>
+                                <p id="level-display" class="text-3xl font-display font-black text-indigo-700">-</p>
+                            </div>
+                            <button onclick="setReadingMode('study')" class="w-full px-6 py-3.5 bg-slate-800 text-white font-bold rounded-xl shadow hover:bg-slate-700 transition-colors">Review Answers</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="rd-vocab-container" class="glass-panel rounded-2xl p-8 mt-6">
+                <div id="rd-vocab"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Data Script -->
+    <script src="data.js"></script>
+
+    <!-- Main Logic Script -->
+    <script>
+        // Utilities
+        // Utilities
+        let showTranslation = true;
+        function toggleTranslation(checked) {
+            showTranslation = checked;
+            renderSpeaking1();
+            renderSpeaking2();
+            renderSpeaking3();
+            renderWriting1();
+            renderWriting2();
+        }
+
+        const t = (text) => `<span class="template-highlight">${text}</span>`;
+        const k = (text) => `<span class="keyword-highlight">${text}</span>`;
+        const bp = (text) => `<span class="blueprint-keyword">${text}</span>`;
+        
+        const t_vi = (text) => `<span class="text-slate-500">${text}</span>`;
+        const k_vi = (text) => `<span class="text-emerald-700 font-medium">${text}</span>`;
+        const bp_vi = (text) => `<span class="text-emerald-700 font-medium italic">${text}</span>`;
+
+        const v = (html) => showTranslation ? `<div class="mt-1 text-[0.95rem] italic leading-relaxed border-l-2 border-emerald-300 pl-3">${html}</div>` : '';
+        
+        const parseT = (text) => text.replace(/<t>/g, '<span class="template-highlight">').replace(/<\/t>/g, '</span>').replace(/<k>/g, '<span class="keyword-highlight">').replace(/<\/k>/g, '</span>');
+        const parseT_vi = (text) => text.replace(/<t>/g, '<span class="text-slate-500">').replace(/<\/t>/g, '</span>').replace(/<k>/g, '<span class="text-emerald-700 font-medium">').replace(/<\/k>/g, '</span>');
+
+        const renderVocabTable = (vocabArr) => {
+            if (!vocabArr || vocabArr.length === 0) return '';
+            let rows = vocabArr.map(v => `
+                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                    <td class="p-3 font-bold text-primary">${v.word}</td>
+                    <td class="p-3 text-slate-500 font-mono text-sm">${v.ipa}</td>
+                    <td class="p-3 font-medium text-slate-700">${v.mean}</td>
+                </tr>
+            `).join('');
+            return `
+                <h3 class="font-bold text-slate-500 uppercase tracking-wider text-sm mb-4"><i class="fa-solid fa-book-bookmark mr-2"></i>Vocabulary Box</h3>
+                <div class="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-50 border-b border-slate-200">
+                            <tr>
+                                <th class="p-3 font-bold text-slate-600">Word/Phrase</th>
+                                <th class="p-3 font-bold text-slate-600">IPA</th>
+                                <th class="p-3 font-bold text-slate-600">Meaning</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        };
+        
+        const renderLinkersTable = (linkersArr) => {
+            let rows = linkersArr.map(v => `
+                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                    <td class="p-3 font-bold text-emerald-600 w-1/3">${v.func}</td>
+                    <td class="p-3 font-medium text-slate-700">${v.phrases}</td>
+                </tr>
+            `).join('');
+            return `
+                <h3 class="font-bold text-emerald-600 uppercase tracking-wider text-sm mb-4"><i class="fa-solid fa-link mr-2"></i>Linkers & Useful Phrases</h3>
+                <div class="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-50 border-b border-slate-200">
+                            <tr>
+                                <th class="p-3 font-bold text-slate-600">Function</th>
+                                <th class="p-3 font-bold text-slate-600">Phrases</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        // Tab Management
+        function switchMainTab(tabId) {
+            document.querySelectorAll('.main-tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.main-tab-btn').forEach(el => {
+                el.classList.remove('active', 'bg-white', 'text-primary', 'shadow');
+                if(el.id.includes('reading')) el.classList.remove('text-indigo-600');
+                el.classList.add('text-slate-600');
+            });
+            document.getElementById('content-' + tabId).classList.add('active');
+            let btn = document.getElementById('tab-' + tabId);
+            btn.classList.remove('text-slate-600');
+            btn.classList.add('active', 'bg-white', 'text-primary', 'shadow');
+        }
+
+        function switchSubTab(subTabId, parentId) {
+            document.querySelectorAll(`#content-${parentId} .sub-tab-content`).forEach(el => el.classList.remove('active'));
+            document.querySelectorAll(`.subtab-btn-${parentId}`).forEach(el => {
+                el.classList.remove('active', 'shadow-sm', 'bg-blue-100', 'text-blue-700', 'bg-purple-100', 'text-purple-700', 'bg-emerald-100', 'text-emerald-700', 'bg-orange-100', 'text-orange-700', 'bg-rose-100', 'text-rose-700');
+                el.classList.add('text-slate-600');
+            });
+            
+            document.getElementById(`content-${subTabId}`).classList.add('active');
+            let btn = document.getElementById(`subtab-${subTabId}`);
+            btn.classList.remove('text-slate-600');
+            btn.classList.add('active', 'shadow-sm');
+            
+            if (subTabId === 'sp1') btn.classList.add('bg-blue-100', 'text-blue-700');
+            if (subTabId === 'sp2') btn.classList.add('bg-purple-100', 'text-purple-700');
+            if (subTabId === 'sp3') btn.classList.add('bg-emerald-100', 'text-emerald-700');
+            if (subTabId === 'wt1') btn.classList.add('bg-orange-100', 'text-orange-700');
+            if (subTabId === 'wt2') btn.classList.add('bg-rose-100', 'text-rose-700');
+        }
+
+        // Initialize App
+        window.onload = () => {
+            if (!window.vstepData) {
+                alert("Error: data.js not loaded.");
+                return;
+            }
+            initDropdowns();
+            renderSpeaking1();
+            renderSpeaking2();
+            renderSpeaking3();
+            renderWriting1();
+            initWriting2();
+            renderReading();
+        };
+
+        function populate(selectId, dataArr, defaultOption = "-- [Xem Khung Sườn Mẫu (Blueprint)] --") {
+            const select = document.getElementById(selectId);
+            const options = dataArr.map((item, i) => `<option value="${i}">${item.title || item.name || item.id}</option>`).join('');
+            select.innerHTML = `<option value="">${defaultOption}</option>` + options;
+            select.value = "";
+        }
+
+        function initDropdowns() {
+            const db = window.vstepData;
+            populate('sp1-select', db.speaking.part1);
+            populate('sp2-select', db.speaking.part2);
+            populate('sp3-select', db.speaking.part3);
+            populate('wt1-select', db.writing.task1);
+            populate('rd-select', db.reading, "-- [Chọn Bài Thi (Mock Test)] --");
+        }
+
+        // Blueprint Logic
+        function renderSpeaking1() {
+            const index = document.getElementById(`sp1-select`).value;
+            if(index === "") {
+                const areTemplate = `
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm mb-4">
+                        <div class="font-bold text-slate-400 mb-3 text-lg"><i class="fa-solid fa-circle-question mr-2"></i>[Câu hỏi của giám khảo]</div>
+                        <div class="pl-4 border-l-4 border-emerald-400 text-slate-700 leading-relaxed text-lg">
+                            <div class="mb-2"><span class="font-bold text-emerald-600">A (Answer):</span> ${t("[Trả lời trực tiếp vào trọng tâm câu hỏi]")}</div>
+                            <div class="mb-2"><span class="font-bold text-emerald-600">R (Reason):</span> ${t("[Đưa ra 1 lý do để giải thích cho câu trả lời trên]")}</div>
+                            <div><span class="font-bold text-emerald-600">E (Example):</span> ${t("[Nêu 1 ví dụ cụ thể hoặc chi tiết nhỏ để làm rõ lý do]")}</div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById(`sp1-content`).innerHTML = `<div class="mb-4 text-emerald-700 font-bold text-xl"><i class="fa-solid fa-wrench mr-2"></i>A.R.E Blueprint</div>` + areTemplate + areTemplate;
+                
+                document.getElementById(`sp1-vocab`).innerHTML = renderLinkersTable([
+                    {func: "Direct Answer", phrases: "Well, currently I am...<br>To be honest...<br>Actually..."},
+                    {func: "Reasoning", phrases: "The main reason is that...<br>This is because..."},
+                    {func: "Giving Example", phrases: "For example...<br>For instance...<br>Specifically..."}
+                ]);
+                return;
+            }
+            const data = window.vstepData.speaking.part1[index];
+            document.getElementById(`sp1-content`).innerHTML = data.questions.map(q => {
+                const a_vi = q.a_vi || q.a;
+                return `
+                <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm mb-4">
+                    <div class="font-bold text-slate-800 mb-3 text-lg"><i class="fa-solid fa-circle-question text-blue-500 mr-2"></i>${q.q}${showTranslation && q.q_vi ? `<div class="text-sm text-emerald-600 mt-1 font-normal italic">${q.q_vi}</div>` : ''}</div>
+                    <div class="pl-4 border-l-4 border-blue-400 text-slate-700 leading-relaxed">${parseT(q.a)}${v(parseT_vi(a_vi))}</div>
+                </div>
+                `;
+            }).join('');
+            document.getElementById(`sp1-vocab`).innerHTML = renderVocabTable(data.vocab);
+        }
+
+        function renderSpeaking2() {
+            const index = document.getElementById(`sp2-select`).value;
+            let d;
+            
+            if(index === "") {
+                d = {
+                    situation: "[Tình huống đặt ra]", situation_vi: "[Tình huống tiếng Việt]",
+                    options: ["[Lựa chọn A]", "[Lựa chọn B]", "[Lựa chọn C]"],
+                    options_vi: ["[Lựa chọn A_vi]", "[Lựa chọn B_vi]", "[Lựa chọn C_vi]"],
+                    selected: { name: "[Option được chọn]", name_vi: "[Option được chọn_vi]", reason1: "[Lý do 1]", reason1_vi: "[Lý do 1_vi]", detail1: "[Giải thích chi tiết/Ví dụ 1]", detail1_vi: "[Giải thích 1_vi]", reason2: "[Lý do 2]", reason2_vi: "[Lý do 2_vi]", outcome: "[Kết quả/Lợi ích mang lại]", outcome_vi: "[Kết quả_vi]" },
+                    rejected1: { name: "[Option loại 1]", name_vi: "[Option loại 1_vi]", drawback: "[Nhược điểm của Option loại 1]", drawback_vi: "[Nhược điểm 1_vi]" },
+                    rejected2: { name: "[Option loại 2]", name_vi: "[Option loại 2_vi]", drawback: "[Nhược điểm của Option loại 2]", drawback_vi: "[Nhược điểm 2_vi]" }
+                };
+            } else {
+                d = window.vstepData.speaking.part2[index];
+            }
+            
+            // Prompt Box
+            document.getElementById('sp2-prompt-situation').innerHTML = d.situation + (showTranslation && d.situation_vi ? `<br><span class="text-sm text-emerald-600 mt-1 block">${d.situation_vi}</span>` : '');
+            if(index === "") document.getElementById('sp2-prompt-situation').classList.add('text-slate-400');
+            else document.getElementById('sp2-prompt-situation').classList.remove('text-slate-400');
+
+            document.getElementById('sp2-prompt-options').innerHTML = d.options.map((opt, i) => 
+                `<li class="bg-white border border-slate-200 rounded-lg p-2 text-center font-medium shadow-sm ${index === "" ? 'text-slate-400 border-dashed' : ''}">
+                    ${opt}
+                    ${showTranslation && d.options_vi ? `<div class="text-xs text-emerald-600 mt-1 font-normal italic">${d.options_vi[i]}</div>` : ''}
+                </li>`
+            ).join('');
+
+            // Template Injection
+            const hl = index === "" ? bp : k;
+            
+            // English
+            const p1 = `${t("Given the situation of")} ${hl(d.situation)}, ${t("there are three options:")} ${hl(d.options.join(", "))}. ${t("Among these, I strongly believe that")} ${hl(d.selected.name)} ${t("is the most optimal choice.")}`;
+            const p2 = `${t("First and foremost,")} ${hl(d.selected.name)} ${t("is beneficial because")} ${hl(d.selected.reason1)}. ${t("To be specific,")} ${hl(d.selected.detail1)}. ${t("In addition, another great advantage is that")} ${hl(d.selected.reason2)}. ${t("Consequently, it allows us to")} ${hl(d.selected.outcome)}.`;
+            const p3 = `${t("On the other hand, regarding")} ${hl(d.rejected1.name)}, ${t("although it has some merits, I do not choose it because")} ${hl(d.rejected1.drawback)}. ${t("This makes it quite impractical in this context.")}`;
+            const p4 = `${t("As for")} ${hl(d.rejected2.name)}, ${t("it is not a suitable option either due to the fact that")} ${hl(d.rejected2.drawback)}. ${t("Therefore, it is not ideal for this situation.")}`;
+            const p5 = `${t("In conclusion, taking everything into consideration,")} ${hl(d.selected.name)} ${t("is undoubtedly the finest and most reasonable solution.")}`;
+
+            // Vietnamese (Safe fallback if undefined)
+            const s_vi = d.situation_vi || d.situation;
+            const o_vi = d.options_vi || d.options;
+            const sel_n_vi = d.selected.name_vi || d.selected.name;
+            const sel_r1_vi = d.selected.reason1_vi || d.selected.reason1;
+            const sel_d1_vi = d.selected.detail1_vi || d.selected.detail1;
+            const sel_r2_vi = d.selected.reason2_vi || d.selected.reason2;
+            const sel_o_vi = d.selected.outcome_vi || d.selected.outcome;
+            const r1_n_vi = d.rejected1.name_vi || d.rejected1.name;
+            const r1_d_vi = d.rejected1.drawback_vi || d.rejected1.drawback;
+            const r2_n_vi = d.rejected2.name_vi || d.rejected2.name;
+            const r2_d_vi = d.rejected2.drawback_vi || d.rejected2.drawback;
+
+            const hl_vi = index === "" ? bp_vi : k_vi;
+            const p1_vi = `${t_vi("Với tình huống")} ${hl_vi(s_vi)}, ${t_vi("chúng ta có 3 lựa chọn:")} ${hl_vi(o_vi.join(", "))}. ${t_vi("Trong số này, tôi tin chắc rằng")} ${hl_vi(sel_n_vi)} ${t_vi("là lựa chọn tối ưu nhất.")}`;
+            const p2_vi = `${t_vi("Đầu tiên và quan trọng nhất,")} ${hl_vi(sel_n_vi)} ${t_vi("rất có lợi bởi vì")} ${hl_vi(sel_r1_vi)}. ${t_vi("Cụ thể,")} ${hl_vi(sel_d1_vi)}. ${t_vi("Thêm vào đó, một lợi thế lớn khác là")} ${hl_vi(sel_r2_vi)}. ${t_vi("Hậu quả là, điều này cho phép chúng ta")} ${hl_vi(sel_o_vi)}.`;
+            const p3_vi = `${t_vi("Mặt khác, đối với")} ${hl_vi(r1_n_vi)}, ${t_vi("mặc dù nó có một vài ưu điểm, tôi không chọn nó vì")} ${hl_vi(r1_d_vi)}. ${t_vi("Điều này khiến nó khá thiếu thực tế trong ngữ cảnh này.")}`;
+            const p4_vi = `${t_vi("Về phần")} ${hl_vi(r2_n_vi)}, ${t_vi("đây cũng không phải là lựa chọn phù hợp do thực tế là")} ${hl_vi(r2_d_vi)}. ${t_vi("Vì vậy, nó không lý tưởng cho tình huống này.")}`;
+            const p5_vi = `${t_vi("Tóm lại, xem xét mọi khía cạnh,")} ${hl_vi(sel_n_vi)} ${t_vi("chắc chắn là giải pháp tốt nhất và hợp lý nhất.")}`;
+
+            let htmlContent = [
+                {en: p1, vi: p1_vi}, {en: p2, vi: p2_vi}, {en: p3, vi: p3_vi}, {en: p4, vi: p4_vi}, {en: p5, vi: p5_vi}
+            ].map(p => `<div class="mb-5"><p class="text-justify">${p.en}</p>${v(p.vi)}</div>`).join('');
+            
+            if(index === "") htmlContent = `<div class="mb-4 text-emerald-700 font-bold text-xl"><i class="fa-solid fa-wrench mr-2"></i>5-Paragraph Blueprint</div>` + htmlContent;
+            document.getElementById(`sp2-content`).innerHTML = htmlContent;
+
+            if(index === "") {
+                document.getElementById(`sp2-vocab`).innerHTML = renderLinkersTable([
+                    {func: "Opening", phrases: "Given the situation of...<br>there are three options..."},
+                    {func: "Choosing", phrases: "Among these, I strongly believe that...<br>...is the most optimal choice."},
+                    {func: "Supporting", phrases: "First and foremost...<br>To be specific...<br>In addition...<br>Consequently..."},
+                    {func: "Rejecting", phrases: "On the other hand...<br>although it has some merits, I do not choose it because...<br>As for...<br>due to the fact that..."},
+                    {func: "Concluding", phrases: "In conclusion...<br>taking everything into consideration..."}
+                ]);
+            } else {
+                document.getElementById(`sp2-vocab`).innerHTML = renderVocabTable(d.vocab);
+            }
+        }
+
+        function renderSpeaking3() {
+            const index = document.getElementById(`sp3-select`).value;
+            let d;
+            if(index === "") {
+                d = {
+                    centralTopic: "[Chủ đề chính (Central Topic)]", centralTopic_vi: "[Chủ đề chính_vi]",
+                    ideas: [
+                        { name: "[Nhánh 1]", name_vi: "[Nhánh 1_vi]", detail: "[Giải thích nhánh 1]", detail_vi: "[Giải thích 1_vi]", example: "[Ví dụ nhánh 1]", example_vi: "[Ví dụ 1_vi]", outcome: "[Kết quả nhánh 1]", outcome_vi: "[Kết quả 1_vi]" },
+                        { name: "[Nhánh 2]", name_vi: "[Nhánh 2_vi]", detail: "[Giải thích nhánh 2]", detail_vi: "[Giải thích 2_vi]", example: "[Ví dụ nhánh 2]", example_vi: "[Ví dụ 2_vi]", outcome: "[Kết quả nhánh 2]", outcome_vi: "[Kết quả 2_vi]" },
+                        { name: "[Nhánh 3/Ý riêng]", name_vi: "[Nhánh 3_vi]", detail: "[Giải thích nhánh 3]", detail_vi: "[Giải thích 3_vi]", example: "[Ví dụ nhánh 3]", example_vi: "[Ví dụ 3_vi]", outcome: "[Kết quả nhánh 3]", outcome_vi: "[Kết quả 3_vi]" }
+                    ]
+                };
+            } else {
+                d = window.vstepData.speaking.part3[index];
+            }
+            
+            // Prompt Box
+            document.getElementById('sp3-prompt-topic').innerHTML = d.centralTopic + (showTranslation && d.centralTopic_vi ? `<div class="text-sm text-emerald-600 mt-1 font-normal">${d.centralTopic_vi}</div>` : '');
+            if(index === "") document.getElementById('sp3-prompt-topic').className = "text-xl font-display font-bold text-slate-400 mb-4 italic";
+            else document.getElementById('sp3-prompt-topic').className = "text-xl font-display font-bold text-emerald-700 mb-4";
+
+            document.getElementById('sp3-prompt-mindmap').innerHTML = `
+                <div class="mindmap-node mindmap-center ${index !== "" ? 'filled' : ''}">${d.centralTopic.toUpperCase()}</div>
+                <div class="mindmap-node ${index !== "" ? 'filled' : ''}">${d.ideas[0].name}${showTranslation && d.ideas[0].name_vi ? `<div class="text-xs text-emerald-600 mt-1">${d.ideas[0].name_vi}</div>` : ''}</div>
+                <div class="mindmap-node ${index !== "" ? 'filled' : ''}">${d.ideas[1].name}${showTranslation && d.ideas[1].name_vi ? `<div class="text-xs text-emerald-600 mt-1">${d.ideas[1].name_vi}</div>` : ''}</div>
+                <div class="mindmap-node ${index !== "" ? 'filled' : ''}">${d.ideas[2].name}${showTranslation && d.ideas[2].name_vi ? `<div class="text-xs text-emerald-600 mt-1">${d.ideas[2].name_vi}</div>` : ''}</div>
+                <div class="mindmap-node border-dashed border-emerald-400 bg-emerald-50 text-emerald-700">(Your own idea)</div>
+            `;
+
+            const hl = index === "" ? bp : k;
+            
+            const p1 = `${t("It is widely acknowledged that")} ${hl(d.centralTopic)} ${t("plays a vital role and brings about various notable benefits. From my perspective, there are three primary aspects worth mentioning.")}`;
+            const p2 = `${t("To begin with, the most prominent point is that it helps with")} ${hl(d.ideas[0].name)}. ${t("To be specific,")} ${hl(d.ideas[0].detail)}. ${t("For instance,")} ${hl(d.ideas[0].example)}. ${t("Consequently, this leads to")} ${hl(d.ideas[0].outcome)}.`;
+            const p3 = `${t("In addition to this, another key factor is")} ${hl(d.ideas[1].name)}. ${t("This is mainly because")} ${hl(d.ideas[1].detail)}. ${t("As a result,")} ${hl(d.ideas[1].example)} ${t("leading to")} ${hl(d.ideas[1].outcome)}.`;
+            const p4 = `${t("Last but not least, we should not overlook")} ${hl(d.ideas[2].name)}. ${t("Specifically,")} ${hl(d.ideas[2].detail)}. ${t("Therefore, it contributes significantly to")} ${hl(d.ideas[2].outcome)} ${t("because")} ${hl(d.ideas[2].example)}.`;
+            const p5 = `${t("All in all, taking all the aforementioned arguments into account, it is undeniable that")} ${hl(d.centralTopic)} ${t("is extremely essential and beneficial in our lives.")}`;
+
+            // Vietnamese Translations
+            const ct_vi = d.centralTopic_vi || d.centralTopic;
+            const i0_n = d.ideas[0].name_vi || d.ideas[0].name, i0_d = d.ideas[0].detail_vi || d.ideas[0].detail, i0_e = d.ideas[0].example_vi || d.ideas[0].example, i0_o = d.ideas[0].outcome_vi || d.ideas[0].outcome;
+            const i1_n = d.ideas[1].name_vi || d.ideas[1].name, i1_d = d.ideas[1].detail_vi || d.ideas[1].detail, i1_e = d.ideas[1].example_vi || d.ideas[1].example, i1_o = d.ideas[1].outcome_vi || d.ideas[1].outcome;
+            const i2_n = d.ideas[2].name_vi || d.ideas[2].name, i2_d = d.ideas[2].detail_vi || d.ideas[2].detail, i2_e = d.ideas[2].example_vi || d.ideas[2].example, i2_o = d.ideas[2].outcome_vi || d.ideas[2].outcome;
+
+            const hl_vi = index === "" ? bp_vi : k_vi;
+            const p1_vi = `${t_vi("Nhiều người đều công nhận rằng")} ${hl_vi(ct_vi)} ${t_vi("đóng vai trò vô cùng quan trọng và mang lại nhiều lợi ích đáng chú ý. Theo quan điểm của tôi, có ba khía cạnh chính đáng để đề cập.")}`;
+            const p2_vi = `${t_vi("Đầu tiên, điểm nổi bật nhất là nó giúp ích cho việc")} ${hl_vi(i0_n)}. ${t_vi("Cụ thể,")} ${hl_vi(i0_d)}. ${t_vi("Ví dụ,")} ${hl_vi(i0_e)}. ${t_vi("Hậu quả là, điều này dẫn đến")} ${hl_vi(i0_o)}.`;
+            const p3_vi = `${t_vi("Thêm vào đó, một yếu tố then chốt khác là")} ${hl_vi(i1_n)}. ${t_vi("Điều này chủ yếu là do")} ${hl_vi(i1_d)}. ${t_vi("Kết quả là,")} ${hl_vi(i1_e)} ${t_vi("dẫn đến")} ${hl_vi(i1_o)}.`;
+            const p4_vi = `${t_vi("Cuối cùng nhưng không kém phần quan trọng, chúng ta không nên bỏ qua")} ${hl_vi(i2_n)}. ${t_vi("Cụ thể,")} ${hl_vi(i2_d)}. ${t_vi("Do đó, nó đóng góp đáng kể vào việc")} ${hl_vi(i2_o)} ${t_vi("bởi vì")} ${hl_vi(i2_e)}.`;
+            const p5_vi = `${t_vi("Tóm lại, xem xét tất cả các lập luận đã đề cập ở trên, không thể phủ nhận rằng")} ${hl_vi(ct_vi)} ${t_vi("là cực kỳ thiết yếu và có lợi trong cuộc sống của chúng ta.")}`;
+
+            let htmlContent = [
+                {en: p1, vi: p1_vi}, {en: p2, vi: p2_vi}, {en: p3, vi: p3_vi}, {en: p4, vi: p4_vi}, {en: p5, vi: p5_vi}
+            ].map(p => `<div class="mb-5"><p class="text-justify">${p.en}</p>${v(p.vi)}</div>`).join('');
+            
+            if(index === "") htmlContent = `<div class="mb-4 text-emerald-700 font-bold text-xl"><i class="fa-solid fa-wrench mr-2"></i>Mindmap Blueprint</div>` + htmlContent;
+            document.getElementById(`sp3-content`).innerHTML = htmlContent;
+
+            if(index === "") {
+                document.getElementById(`sp3-vocab`).innerHTML = renderLinkersTable([
+                    {func: "Intro", phrases: "It is widely acknowledged that...<br>From my perspective, there are three primary aspects worth mentioning."},
+                    {func: "Point 1", phrases: "To begin with...<br>To be specific...<br>For instance...<br>Consequently..."},
+                    {func: "Point 2", phrases: "In addition to this...<br>This is mainly because...<br>As a result..."},
+                    {func: "Point 3", phrases: "Last but not least...<br>Specifically...<br>Therefore, it contributes significantly to..."},
+                    {func: "Conclusion", phrases: "All in all...<br>taking all the aforementioned arguments into account...<br>it is undeniable that..."}
+                ]);
+            } else {
+                document.getElementById(`sp3-vocab`).innerHTML = renderVocabTable(d.vocab);
+            }
+        }
+
+        function renderWriting1() {
+            const index = document.getElementById(`wt1-select`).value;
+            if(index === "") {
+                const b_en = [
+                    `${t("Dear [Tên/Chức vụ người nhận],")}`,
+                    `${t("I am writing this letter to [Mục đích viết thư: phàn nàn/hỏi thông tin/cảm ơn/xin lỗi] regarding")} ${bp("[Vấn đề chính]")}.`,
+                    `${t("To be more specific,")} ${bp("[Mô tả chi tiết bối cảnh và sự kiện đã xảy ra]")}. ${t("Furthermore,")} ${bp("[Cung cấp thêm thông tin bổ sung/Nhấn mạnh vấn đề]")}.`,
+                    `${t("Therefore, I would appreciate it if you could")} ${bp("[Yêu cầu hành động giải quyết cụ thể]")}.`,
+                    `${t("I look forward to hearing from you soon.")}<br><br>${t("Yours faithfully/sincerely,")}<br>${bp("[Tên của bạn]")}`
+                ];
+                const b_vi = [
+                    `${t_vi("Kính gửi [Tên/Chức vụ người nhận],")}`,
+                    `${t_vi("Tôi viết lá thư này nhằm mục đích [phàn nàn/hỏi thông tin/cảm ơn/xin lỗi] về")} ${bp_vi("[Vấn đề chính]")}.`,
+                    `${t_vi("Cụ thể hơn,")} ${bp_vi("[Mô tả chi tiết bối cảnh và sự kiện đã xảy ra]")}. ${t_vi("Hơn nữa,")} ${bp_vi("[Cung cấp thêm thông tin bổ sung/Nhấn mạnh vấn đề]")}.`,
+                    `${t_vi("Do đó, tôi sẽ rất biết ơn nếu bạn có thể")} ${bp_vi("[Yêu cầu hành động giải quyết cụ thể]")}.`,
+                    `${t_vi("Tôi mong sớm nhận được phản hồi từ bạn.")}<br><br>${t_vi("Trân trọng,")}<br>${bp_vi("[Tên của bạn]")}`
+                ];
+                const letterBlueprint = b_en.map((en, i) => `<div class="mb-5"><p class="text-justify">${en}</p>${v(b_vi[i])}</div>`).join('');
+                
+                document.getElementById(`wt1-content`).innerHTML = `<div class="mb-4 text-emerald-700 font-bold text-xl"><i class="fa-solid fa-wrench mr-2"></i>Formal Letter Blueprint</div>` + letterBlueprint;
+                document.getElementById(`wt1-vocab`).innerHTML = renderLinkersTable([
+                    {func: "Greeting", phrases: "Dear Sir/Madam,<br>Dear Mr/Ms [Name],"},
+                    {func: "Purpose", phrases: "I am writing this letter to express my dissatisfaction with...<br>I am writing to inquire about..."},
+                    {func: "Details", phrases: "To be more specific...<br>First of all...<br>Furthermore..."},
+                    {func: "Request", phrases: "I would appreciate it if you could...<br>I urge you to..."},
+                    {func: "Sign-off", phrases: "I look forward to hearing from you.<br>Yours faithfully/sincerely,"}
+                ]);
+                return;
+            }
+            const data = window.vstepData.writing.task1[index];
+            document.getElementById(`wt1-content`).innerHTML = data.paragraphs.map(p => {
+                const translationHtml = p.content_vi 
+                    ? v(parseT_vi(p.content_vi)) 
+                    : showTranslation ? `<div class="mt-2 text-sm text-slate-400 italic border-l-2 border-slate-200 pl-3 py-1">(Đang cập nhật bản dịch tiếng Việt...)</div>` : '';
+                return `
+                <div class="mb-5">
+                    <p class="text-justify">${parseT(p.content)}</p>
+                    ${translationHtml}
+                </div>
+                `;
+            }).join('');
+            document.getElementById(`wt1-vocab`).innerHTML = renderVocabTable(data.vocab);
+        }
+
+        const wt2Types = [
+            "Type 1: Discussion", "Type 2: Agree - Disagree", "Type 3: Advantages - Disadvantages",
+            "Type 4: Causes - Effects", "Type 5: Causes - Solutions"
+        ];
+        
+        function initWriting2() {
+            const typeSelect = document.getElementById('wt2-type-select');
+            typeSelect.innerHTML = wt2Types.map((t, i) => `<option value="${i+1}">${t}</option>`).join('');
+            updateWriting2Topics();
+        }
+
+        function updateWriting2Topics() {
+            const typeId = parseInt(document.getElementById('wt2-type-select').value);
+            const filteredTopics = window.vstepData.writing.task2.filter(t => t.type === typeId);
+            const topicSelect = document.getElementById('wt2-topic-select');
+            const options = filteredTopics.map(t => `<option value="${t.id}">${t.title}</option>`).join('');
+            topicSelect.innerHTML = `<option value="">-- [Xem Khung Sườn Mẫu (Blueprint)] --</option>` + options;
+            renderWriting2(); 
+        }
+
+        function renderWriting2() {
+            const topicId = document.getElementById('wt2-topic-select').value;
+            const typeId = parseInt(document.getElementById('wt2-type-select').value);
+            
+            let d;
+            if(topicId === "") {
+                d = {
+                    type: typeId,
+                    chu_de: "[CHỦ ĐỀ CHÍNH]",
+                    quan_diem: "[QUAN ĐIỂM]",
+                    quan_diem_1: "[QUAN ĐIỂM 1]",
+                    quan_diem_2: "[QUAN ĐIỂM 2]",
+                    quan_diem_chot: "[QUAN ĐIỂM ĐƯỢC CHỌN]",
+                    li_do_1: "[LÝ DO 1]",
+                    giai_thich_1: "[GIẢI THÍCH 1]",
+                    vi_du_1: "[VÍ DỤ 1]",
+                    li_do_2: "[LÝ DO 2]",
+                    giai_thich_2: "[GIẢI THÍCH 2]",
+                    vi_du_2: "[VÍ DỤ 2]",
+                    li_do_3: "[LÝ DO 3/PHẢN BIỆN]",
+                    giai_thich_3: "[GIẢI THÍCH 3]",
+                    vi_du_3: "[VÍ DỤ 3]",
+                    li_do_3_opp: "[LÝ DO PHẢN BIỆN]",
+                    giai_thich_3_opp: "[GIẢI THÍCH PHẢN BIỆN]",
+                    vi_du_3_opp: "[VÍ DỤ PHẢN BIỆN]",
+                    thuan_loi_1: "[THUẬN LỢI 1]",
+                    thuan_loi_2: "[THUẬN LỢI 2]",
+                    bat_loi: "[BẤT LỢI 1]",
+                    nguyen_nhan_1: "[NGUYÊN NHÂN 1]",
+                    nguyen_nhan_2: "[NGUYÊN NHÂN 2]",
+                    hau_qua_1: "[HẬU QUẢ 1]",
+                    hau_qua_2: "[HẬU QUẢ 2]",
+                    giai_phap_1: "[GIẢI PHÁP 1]",
+                    giai_phap_2: "[GIẢI PHÁP 2]"
+                };
+            } else {
+                d = window.vstepData.writing.task2.find(t => t.id === topicId);
+            }
+            
+            if(!d) return;
+
+            let p1, p2, p3, p4;
+            let p1_vi, p2_vi, p3_vi, p4_vi;
+            const hl = topicId === "" ? bp : k;
+            const hl_vi = topicId === "" ? bp_vi : k_vi;
+            
+            // Check if Vietnamese translation exists for this topic (fallback for blueprint is true)
+            const hasVi = topicId === "" || d.chu_de_vi !== undefined;
+            const _vi = (key) => d[key + '_vi'] || d[key];
+
+            if(d.type === 1) {
+                p1 = `${t("In recent years,")} ${hl(d.chu_de)} ${t("has become a broad issue to the general public. Some people believe that")} ${hl(d.quan_diem_1)}. ${t("However, others think that")} ${hl(d.quan_diem_2)}. ${t("In my opinion, I agree with the")} ${hl("FORMER/ LATER")} ${t("idea. Discussed below are several reasons supporting my perspective.")}`;
+                p2 = `${t("First and foremost, people should recognize that")} ${hl(d.quan_diem_1)}. ${t("A very important point to consider is that")} ${hl(d.li_do_1)}. ${t("This means that")} ${hl(d.giai_thich_1)}. ${t("To illustrate this point, I would like to mention that")} ${hl(d.vi_du_1)}. ${t("Another point I would like to make is that")} ${hl(d.li_do_2)}. ${t("This because of the fact that")} ${hl(d.giai_thich_2)}. ${t("For example,")} ${hl(d.vi_du_2)}.`;
+                p3 = `${t("On the other hand, there are several arguments in support of the idea that")} ${hl(d.quan_diem_2)}. ${t("It is also convincing to realise that")} ${hl(d.li_do_3)}. ${t("This means that")} ${hl(d.giai_thich_3)}. ${t("A specific example of this is that")} ${hl(d.vi_du_3)}.`;
+                p4 = `${t("In conclusion, the above mentioned facts have created a dilemma when people evaluate the impact of this issue, and it is still a controversial issue. As far as I am concerned, I put more highlight on the idea that")} ${hl(d.quan_diem_chot)}. ${t("People should have further consideration on this issue.")}`;
+
+                p1_vi = `${t_vi("Trong những năm gần đây,")} ${hl_vi(_vi("chu_de"))} ${t_vi("đã trở thành một vấn đề được công chúng đặc biệt quan tâm. Một số người tin rằng")} ${hl_vi(_vi("quan_diem_1"))}. ${t_vi("Tuy nhiên, những người khác lại cho rằng")} ${hl_vi(_vi("quan_diem_2"))}. ${t_vi("Theo quan điểm của tôi, tôi đồng ý với ý kiến")} ${hl_vi("TRƯỚC/SAU")}. ${t_vi("Dưới đây là một vài lý do ủng hộ quan điểm của tôi.")}`;
+                p2_vi = `${t_vi("Đầu tiên và quan trọng nhất, mọi người nên nhận ra rằng")} ${hl_vi(_vi("quan_diem_1"))}. ${t_vi("Một điểm rất quan trọng cần xem xét là")} ${hl_vi(_vi("li_do_1"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_1"))}. ${t_vi("Để minh họa cho điểm này, tôi muốn đề cập rằng")} ${hl_vi(_vi("vi_du_1"))}. ${t_vi("Một điểm khác tôi muốn nhấn mạnh là")} ${hl_vi(_vi("li_do_2"))}. ${t_vi("Điều này là do thực tế là")} ${hl_vi(_vi("giai_thich_2"))}. ${t_vi("Ví dụ,")} ${hl_vi(_vi("vi_du_2"))}.`;
+                p3_vi = `${t_vi("Mặt khác, có một số lập luận ủng hộ quan điểm rằng")} ${hl_vi(_vi("quan_diem_2"))}. ${t_vi("Cũng rất thuyết phục khi nhận ra rằng")} ${hl_vi(_vi("li_do_3"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_3"))}. ${t_vi("Một ví dụ cụ thể cho điều này là")} ${hl_vi(_vi("vi_du_3"))}.`;
+                p4_vi = `${t_vi("Tóm lại, những sự thật đề cập ở trên đã tạo ra một tình thế tiến thoái lưỡng nan khi đánh giá tác động của vấn đề này, và đây vẫn là một chủ đề gây tranh cãi. Theo tôi, tôi nhấn mạnh hơn vào ý kiến rằng")} ${hl_vi(_vi("quan_diem_chot"))}. ${t_vi("Mọi người nên có sự xem xét kỹ lưỡng hơn về vấn đề này.")}`;
+            } 
+            else if(d.type === 2) {
+                p1 = `${t("In recent years,")} ${hl(d.chu_de)} ${t("has become a broad issue to the general public. Some people believe that")} ${hl(d.quan_diem)}. ${t("In my opinion, I partly agree with this idea. Discussed below are several reasons in favor of my perspectives.")}`;
+                p2 = `${t("First and foremost, people should recognize that")} ${hl(d.quan_diem)}. ${t("A very important point to consider is that")} ${hl(d.li_do_1)}. ${t("This means that")} ${hl(d.giai_thich_1)}. ${t("To illustrate this point, I would like to mention that")} ${hl(d.vi_du_1)}. ${t("Another point I would like to make is that")} ${hl(d.li_do_2)}. ${t("This because of the fact that")} ${hl(d.giai_thich_2)}. ${t("For example,")} ${hl(d.vi_du_2)}.`;
+                p3 = `${t("On the other hand, there are several arguments against the statement that")} ${hl(d.quan_diem)}. ${t("In fact, people have this opinion because")} ${hl(d.li_do_3_opp)}. ${t("This means that")} ${hl(d.giai_thich_3_opp)}. ${t("This can be shown by the example that")} ${hl(d.vi_du_3_opp)}.`;
+                p4 = `${t("In conclusion, the above mentioned facts have created a dilemma when people evaluate the impact of this issue, and it is still a controversial issue. As far as I am concerned, it could have both positive and negative impacts. People should have further consideration on this issue.")}`;
+
+                p1_vi = `${t_vi("Trong những năm gần đây,")} ${hl_vi(_vi("chu_de"))} ${t_vi("đã trở thành một vấn đề được công chúng đặc biệt quan tâm. Một số người tin rằng")} ${hl_vi(_vi("quan_diem"))}. ${t_vi("Theo quan điểm của tôi, tôi phần nào đồng ý với ý kiến này. Dưới đây là một vài lý do ủng hộ quan điểm của tôi.")}`;
+                p2_vi = `${t_vi("Đầu tiên và quan trọng nhất, mọi người nên nhận ra rằng")} ${hl_vi(_vi("quan_diem"))}. ${t_vi("Một điểm rất quan trọng cần xem xét là")} ${hl_vi(_vi("li_do_1"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_1"))}. ${t_vi("Để minh họa cho điểm này, tôi muốn đề cập rằng")} ${hl_vi(_vi("vi_du_1"))}. ${t_vi("Một điểm khác tôi muốn nhấn mạnh là")} ${hl_vi(_vi("li_do_2"))}. ${t_vi("Điều này là do thực tế là")} ${hl_vi(_vi("giai_thich_2"))}. ${t_vi("Ví dụ,")} ${hl_vi(_vi("vi_du_2"))}.`;
+                p3_vi = `${t_vi("Mặt khác, có một số lập luận chống lại nhận định rằng")} ${hl_vi(_vi("quan_diem"))}. ${t_vi("Thực tế, mọi người có quan điểm này bởi vì")} ${hl_vi(_vi("li_do_3_opp"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_3_opp"))}. ${t_vi("Điều này có thể được chứng minh qua ví dụ rằng")} ${hl_vi(_vi("vi_du_3_opp"))}.`;
+                p4_vi = `${t_vi("Tóm lại, những sự thật đề cập ở trên đã tạo ra một tình thế tiến thoái lưỡng nan khi đánh giá tác động của vấn đề này, và đây vẫn là một chủ đề gây tranh cãi. Theo tôi, nó có thể có cả tác động tích cực và tiêu cực. Mọi người nên có sự xem xét kỹ lưỡng hơn về vấn đề này.")}`;
+            }
+            else if(d.type === 3) {
+                p1 = `${t("In recent years,")} ${hl(d.chu_de)} ${t("has become a broad issue to the general public. Some people believe that")} ${hl(d.chu_de)} ${t("has many advantages. However, others think that it could aslo have some negative effects. In my opinion, its cons could never overshadow its pros. Discussed below are several benefits as well as drawbacks of this issue.")}`;
+                p2 = `${t("First and foremost, people should recognize that there are many advantages of")} ${hl(d.chu_de)}. ${t("A very important point to consider is that")} ${hl(d.thuan_loi_1)}. ${t("This means that")} ${hl(d.giai_thich_1)}. ${t("To illustrate this point, I would like to mention that")} ${hl(d.vi_du_1)}. ${t("Another point I would like to make is that")} ${hl(d.thuan_loi_2)}. ${t("This because of the fact that")} ${hl(d.giai_thich_2)}. ${t("For example,")} ${hl(d.vi_du_2)}.`;
+                p3 = `${t("On the other hand, in addition to the important advantages of this problem, it has some disadvantages. In fact, people have this opinion because")} ${hl(d.bat_loi)}. ${t("This means that")} ${hl(d.giai_thich_3)}. ${t("This can be shown by the example that")} ${hl(d.vi_du_3)}.`;
+                p4 = `${t("In conclusion, the above mentioned facts have outlined the benefits as well as the drawbacks of this issue. Its advantages should be taken into account. People should take advantage of the pros and minimize the cons of this issue.")}`;
+
+                p1_vi = `${t_vi("Trong những năm gần đây,")} ${hl_vi(_vi("chu_de"))} ${t_vi("đã trở thành một vấn đề được công chúng đặc biệt quan tâm. Một số người tin rằng")} ${hl_vi(_vi("chu_de"))} ${t_vi("có rất nhiều lợi ích. Tuy nhiên, những người khác lại cho rằng nó cũng có thể mang lại một số tác động tiêu cực. Theo quan điểm của tôi, nhược điểm của nó không bao giờ có thể làm lu mờ đi ưu điểm. Dưới đây là một số lợi ích cũng như bất lợi của vấn đề này.")}`;
+                p2_vi = `${t_vi("Đầu tiên và quan trọng nhất, mọi người nên nhận ra rằng có rất nhiều lợi ích của")} ${hl_vi(_vi("chu_de"))}. ${t_vi("Một điểm rất quan trọng cần xem xét là")} ${hl_vi(_vi("thuan_loi_1"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_1"))}. ${t_vi("Để minh họa cho điểm này, tôi muốn đề cập rằng")} ${hl_vi(_vi("vi_du_1"))}. ${t_vi("Một điểm khác tôi muốn nhấn mạnh là")} ${hl_vi(_vi("thuan_loi_2"))}. ${t_vi("Điều này là do thực tế là")} ${hl_vi(_vi("giai_thich_2"))}. ${t_vi("Ví dụ,")} ${hl_vi(_vi("vi_du_2"))}.`;
+                p3_vi = `${t_vi("Mặt khác, bên cạnh những lợi ích quan trọng của vấn đề này, nó cũng có một số bất lợi. Thực tế, mọi người có quan điểm này bởi vì")} ${hl_vi(_vi("bat_loi"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_3"))}. ${t_vi("Điều này có thể được chứng minh qua ví dụ rằng")} ${hl_vi(_vi("vi_du_3"))}.`;
+                p4_vi = `${t_vi("Tóm lại, những sự thật đề cập ở trên đã phác thảo các lợi ích cũng như bất lợi của vấn đề này. Những ưu điểm của nó nên được cân nhắc. Mọi người nên tận dụng các mặt tích cực và giảm thiểu các mặt tiêu cực của vấn đề này.")}`;
+            }
+            else if(d.type === 4) {
+                p1 = `${t("In recent years,")} ${hl(d.chu_de)} ${t("has become a broad issue to the general public. Although noticeable, the impact of this issue has not been realised by many residents. Discussed below are several causes as well as effects of this issue.")}`;
+                p2 = `${t("First and foremost, people should recognize that there are several main reasons supporting the idea that")} ${hl(d.chu_de)}. ${t("A very important point to consider is that")} ${hl(d.nguyen_nhan_1)}. ${t("This means that")} ${hl(d.giai_thich_1)}. ${t("To illustrate this point, I would like to mention that")} ${hl(d.vi_du_1)}. ${t("Another point I would like to make is that")} ${hl(d.nguyen_nhan_2)}. ${t("This because of the fact that")} ${hl(d.giai_thich_2)}. ${t("For example,")} ${hl(d.vi_du_2)}.`;
+                p3 = `${t("There are many serious effects of this issue.one primary effect would be that")} ${hl(d.hau_qua_1)}. ${t("In addition,")} ${hl(d.hau_qua_2)}.`;
+                p4 = `${t("In conclusion, the above - mentioned facts have outlined the reasons as well as the measures of this issue. Its causes and effects should be taken into account. People should have further consideration on this issue.")}`;
+
+                p1_vi = `${t_vi("Trong những năm gần đây,")} ${hl_vi(_vi("chu_de"))} ${t_vi("đã trở thành một vấn đề được công chúng đặc biệt quan tâm. Mặc dù đáng chú ý, tác động của vấn đề này vẫn chưa được nhiều người nhận ra. Dưới đây là một số nguyên nhân cũng như hậu quả của vấn đề này.")}`;
+                p2_vi = `${t_vi("Đầu tiên và quan trọng nhất, mọi người nên nhận ra rằng có một vài lý do chính ủng hộ ý kiến rằng")} ${hl_vi(_vi("chu_de"))}. ${t_vi("Một điểm rất quan trọng cần xem xét là")} ${hl_vi(_vi("nguyen_nhan_1"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_1"))}. ${t_vi("Để minh họa cho điểm này, tôi muốn đề cập rằng")} ${hl_vi(_vi("vi_du_1"))}. ${t_vi("Một điểm khác tôi muốn nhấn mạnh là")} ${hl_vi(_vi("nguyen_nhan_2"))}. ${t_vi("Điều này là do thực tế là")} ${hl_vi(_vi("giai_thich_2"))}. ${t_vi("Ví dụ,")} ${hl_vi(_vi("vi_du_2"))}.`;
+                p3_vi = `${t_vi("Có rất nhiều hậu quả nghiêm trọng của vấn đề này. Một ảnh hưởng chính sẽ là")} ${hl_vi(_vi("hau_qua_1"))}. ${t_vi("Ngoài ra,")} ${hl_vi(_vi("hau_qua_2"))}.`;
+                p4_vi = `${t_vi("Tóm lại, những sự thật đề cập ở trên đã phác thảo các nguyên nhân cũng như tác động của vấn đề này. Nguyên nhân và hậu quả của nó nên được cân nhắc. Mọi người nên có sự xem xét kỹ lưỡng hơn về vấn đề này.")}`;
+            }
+            else if(d.type === 5) {
+                p1 = `${t("In recent years,")} ${hl(d.chu_de)} ${t("has become a broad issue to the general public. Although noticeable, the impact of this issue has not been realised by many residents. Discussed below are several causes as well as solutions of this issue.")}`;
+                p2 = `${t("First and foremost, people should recognize that there are several main reasons supporting the idea that")} ${hl(d.chu_de)}. ${t("A very important point to consider is that")} ${hl(d.nguyen_nhan_1)}. ${t("This means that")} ${hl(d.giai_thich_1)}. ${t("To illustrate this point, I would like to mention that")} ${hl(d.vi_du_1)}. ${t("Another point I would like to make is that")} ${hl(d.nguyen_nhan_2)}. ${t("This because of the fact that")} ${hl(d.giai_thich_2)}. ${t("For example,")} ${hl(d.vi_du_2)}.`;
+                p3 = `${t("In order to resolve such problems, people should take some concerted measures. One primary solution would be that")} ${hl(d.giai_phap_1)}. ${t("In addition,")} ${hl(d.giai_phap_2)}. ${t("However, education is the main way to tackle this issue. People need to be aware of the effects so that they can avoid this problem.")}`;
+                p4 = `${t("In conclusion, the above - mentioned facts have outlined the reasons as well as the measures of this issue. The presented suggestions would be very good steps towards solving them. People should have further consideration on this issue.")}`;
+
+                p1_vi = `${t_vi("Trong những năm gần đây,")} ${hl_vi(_vi("chu_de"))} ${t_vi("đã trở thành một vấn đề được công chúng đặc biệt quan tâm. Mặc dù đáng chú ý, tác động của vấn đề này vẫn chưa được nhiều người nhận ra. Dưới đây là một số nguyên nhân cũng như giải pháp của vấn đề này.")}`;
+                p2_vi = `${t_vi("Đầu tiên và quan trọng nhất, mọi người nên nhận ra rằng có một vài lý do chính ủng hộ ý kiến rằng")} ${hl_vi(_vi("chu_de"))}. ${t_vi("Một điểm rất quan trọng cần xem xét là")} ${hl_vi(_vi("nguyen_nhan_1"))}. ${t_vi("Điều này có nghĩa là")} ${hl_vi(_vi("giai_thich_1"))}. ${t_vi("Để minh họa cho điểm này, tôi muốn đề cập rằng")} ${hl_vi(_vi("vi_du_1"))}. ${t_vi("Một điểm khác tôi muốn nhấn mạnh là")} ${hl_vi(_vi("nguyen_nhan_2"))}. ${t_vi("Điều này là do thực tế là")} ${hl_vi(_vi("giai_thich_2"))}. ${t_vi("Ví dụ,")} ${hl_vi(_vi("vi_du_2"))}.`;
+                p3_vi = `${t_vi("Để giải quyết những vấn đề như vậy, mọi người nên thực hiện một số biện pháp phối hợp. Một giải pháp chính sẽ là")} ${hl_vi(_vi("giai_phap_1"))}. ${t_vi("Ngoài ra,")} ${hl_vi(_vi("giai_phap_2"))}. ${t_vi("Tuy nhiên, giáo dục là cách chính để giải quyết vấn đề này. Mọi người cần phải nhận thức được các tác động để có thể phòng tránh vấn đề này.")}`;
+                p4_vi = `${t_vi("Tóm lại, những sự thật đề cập ở trên đã phác thảo các nguyên nhân cũng như biện pháp khắc phục vấn đề này. Những gợi ý được trình bày sẽ là những bước đi rất tốt hướng tới việc giải quyết chúng. Mọi người nên có sự xem xét kỹ lưỡng hơn về vấn đề này.")}`;
+            }
+
+            let htmlContent = [
+                {en: p1, vi: hasVi ? p1_vi : `<span class="text-slate-400">(Đang cập nhật bản dịch tiếng Việt...)</span>`},
+                {en: p2, vi: hasVi ? p2_vi : ''},
+                {en: p3, vi: hasVi ? p3_vi : ''},
+                {en: p4, vi: hasVi ? p4_vi : ''}
+            ].filter(p => p.en).map(p => `<div class="mb-5"><p class="text-justify">${p.en}</p>${showTranslation && p.vi ? v(p.vi) : ''}</div>`).join('');
+            if(topicId === "") {
+                htmlContent = `<div class="mb-4 text-emerald-700 font-bold text-xl"><i class="fa-solid fa-wrench mr-2"></i>Essay Blueprint - ${wt2Types[d.type-1]}</div>` + htmlContent;
+                document.getElementById(`wt2-vocab`).innerHTML = renderLinkersTable([
+                    {func: "Introduction", phrases: "In recent years, ... has become a broad issue...<br>Some people believe that..."},
+                    {func: "Body Paragraph 1", phrases: "First and foremost, people should recognize that...<br>A very important point to consider is that...<br>This means that...<br>To illustrate this point..."},
+                    {func: "Body Paragraph 2", phrases: "On the other hand...<br>In addition to...<br>In order to resolve such problems...<br>A specific example of this is..."},
+                    {func: "Conclusion", phrases: "In conclusion...<br>The above mentioned facts have created a dilemma...<br>As far as I am concerned...<br>People should have further consideration..."}
+                ]);
+            } else {
+                document.getElementById(`wt2-vocab`).innerHTML = renderVocabTable(d.vocab);
+            }
+            
+            document.getElementById(`wt2-content`).innerHTML = `<div class="text-justify">${htmlContent}</div>`;
+        }
+
+        // Reading Module
+        let currentReadingMode = 'study';
+        let timerInterval = null;
+        let timeLeft = 15 * 60;
+        let userAnswers = [];
+
+        function renderReading() {
+            const index = document.getElementById('rd-select').value;
+            
+            if(index === "") {
+                document.getElementById('rd-title').innerText = "Reading Module";
+                document.getElementById('rd-text').innerHTML = `
+                    <div class="text-center mt-10">
+                        <i class="fa-solid fa-book-open text-6xl text-slate-200 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-600 mb-2">Reading Comprehension</h3>
+                        <p class="text-slate-400">Please select a mock test from the dropdown above to begin.</p>
+                    </div>`;
+                document.getElementById('rd-questions').innerHTML = "";
+                document.getElementById('rd-vocab').innerHTML = "";
+                document.getElementById('test-submit-area').classList.add('hidden');
+                return;
+            }
+            
+            const data = window.vstepData.reading[index];
+            
+            document.getElementById('rd-title').innerText = data.title;
+            document.getElementById('rd-text').innerHTML = data.text;
+            document.getElementById('rd-vocab').innerHTML = renderVocabTable(data.vocab);
+            
+            userAnswers = new Array(data.questions.length).fill(null);
+            
+            const qDiv = document.getElementById('rd-questions');
+            qDiv.innerHTML = data.questions.map((q, i) => `
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow-md">
+                    <p class="font-bold mb-4 text-slate-800"><span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded mr-2">${i + 1}</span>${q.q}</p>
+                    <div class="space-y-3">
+                        ${q.options.map((opt, j) => `
+                            <label class="flex items-center p-3 rounded-lg border border-slate-100 hover:bg-indigo-50 hover:border-indigo-200 cursor-pointer transition-colors">
+                                <input type="radio" name="q${i}" value="${j}" onchange="selectAnswer(${i}, ${j})" class="w-4 h-4 text-indigo-600 focus:ring-indigo-500 border-slate-300">
+                                <span class="ml-3 text-slate-700">${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                    <div id="expl-q${i}" class="mt-5 p-4 rounded-lg hidden text-sm border">
+                        <div class="font-bold mb-2 uppercase tracking-wide text-xs">Explanation</div>
+                        <p class="font-bold mb-1 answer-text"></p>
+                        <p class="italic mb-2 border-l-2 pl-3 evidence-text"></p>
+                        <p class="text-slate-700 expl-text">${q.explanation}</p>
+                    </div>
+                </div>
+            `).join('');
+            
+            if(currentReadingMode === 'test') {
+                document.getElementById('test-submit-area').classList.remove('hidden');
+            }
+        }
+
+        function selectAnswer(qIndex, ansIndex) {
+            userAnswers[qIndex] = ansIndex;
+            if(currentReadingMode === 'study') {
+                const data = window.vstepData.reading[document.getElementById('rd-select').value];
+                const expl = document.getElementById(`expl-q${qIndex}`);
+                expl.classList.remove('hidden');
+                
+                const ansText = expl.querySelector('.answer-text');
+                const eviText = expl.querySelector('.evidence-text');
+                
+                ansText.innerText = `Correct Answer: ${String.fromCharCode(65 + data.questions[qIndex].correct)}`;
+                eviText.innerHTML = `<strong>Evidence:</strong> "${data.questions[qIndex].location}"`;
+                
+                if(ansIndex === data.questions[qIndex].correct) {
+                    expl.className = "mt-5 p-4 rounded-lg text-sm border bg-emerald-50 border-emerald-200";
+                    ansText.className = "font-bold mb-1 answer-text text-emerald-700";
+                    eviText.className = "italic mb-2 border-l-2 pl-3 evidence-text border-emerald-400 text-emerald-800";
+                } else {
+                    expl.className = "mt-5 p-4 rounded-lg text-sm border bg-rose-50 border-rose-200";
+                    ansText.className = "font-bold mb-1 answer-text text-rose-700";
+                    eviText.className = "italic mb-2 border-l-2 pl-3 evidence-text border-rose-400 text-rose-800";
+                }
+            }
+        }
+
+        function setReadingMode(mode) {
+            currentReadingMode = mode;
+            let btnS = document.getElementById('btn-study-mode');
+            let btnT = document.getElementById('btn-test-mode');
+            
+            btnS.className = mode === 'study' 
+                ? "px-5 py-2 rounded-lg bg-white text-indigo-600 shadow font-bold transition-all"
+                : "px-5 py-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-white transition-all font-bold";
+                
+            btnT.className = mode === 'test'
+                ? "px-5 py-2 rounded-lg bg-white text-rose-600 shadow font-bold transition-all"
+                : "px-5 py-2 rounded-lg text-slate-600 hover:text-rose-600 hover:bg-white transition-all font-bold";
+            
+            clearInterval(timerInterval);
+            document.getElementById('test-result').classList.add('hidden');
+            
+            const selectedIndex = document.getElementById('rd-select').value;
+            
+            if(mode === 'test') {
+                document.getElementById('timer-display').classList.remove('hidden');
+                if(selectedIndex !== "") document.getElementById('test-submit-area').classList.remove('hidden');
+                document.getElementById('rd-select').disabled = true;
+                
+                timeLeft = 15 * 60;
+                updateTimerDisplay();
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    updateTimerDisplay();
+                    if(timeLeft <= 0) {
+                        clearInterval(timerInterval);
+                        submitTest();
+                    }
+                }, 1000);
+            } else {
+                document.getElementById('timer-display').classList.add('hidden');
+                document.getElementById('test-submit-area').classList.add('hidden');
+                document.getElementById('rd-select').disabled = false;
+            }
+            renderReading();
+        }
+
+        function updateTimerDisplay() {
+            const m = Math.floor(timeLeft / 60).toString().padStart(2, '0');
+            const s = (timeLeft % 60).toString().padStart(2, '0');
+            document.getElementById('timer-display').innerText = `${m}:${s}`;
+        }
+
+        function submitTest() {
+            clearInterval(timerInterval);
+            const index = document.getElementById('rd-select').value;
+            if(index === "") return;
+            
+            const data = window.vstepData.reading[index];
+            let score = 0;
+            for(let i = 0; i < data.questions.length; i++) {
+                if(userAnswers[i] === data.questions[i].correct) score++;
+            }
+            let level = "Below B1";
+            if(score >= 3) level = "B1 (Passable)";
+            if(score >= 4) level = "B2 (Good)";
+            if(score === 5) level = "C1 (Excellent)";
+            
+            document.getElementById('score-display').innerText = `Score: ${score} / ${data.questions.length}`;
+            document.getElementById('level-display').innerText = level;
+            document.getElementById('test-result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
